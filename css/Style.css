@@ -1,0 +1,25 @@
+#Responsiveimage{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.contenedoresSecP{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    height: 15%;
+    width: 100%;
+}
+
+.primeraSeccion{
+    position: relative;
+}
+
+.containerPrueba{
+    width: 200px;
+    height: 200px;
+    background-color: #0f0f0f;
+}
+
