@@ -1,25 +1,49 @@
 #Responsiveimage{
     width: 100%;
     height: auto;
-    position: absolute;
+    opacity: 0.5;
 }
 
-.contenedoresSecP{
+.primeraSeccion{
+    width: 100%;
+    height: auto;}
+
+.contenedorPrincipal{
+    position: relative;
+    background-color: #0f0f0f;
+}
+
+.ContenedorCuadros {
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    height: 15%;
     width: 100%;
+    top: 40%;
 }
 
-.primeraSeccion{
-    position: relative;
+.cuadro{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-width: thin;
+    border-color: #ffffff;
+    border-style: solid;
+    color: #fff;
+    width: 15%;
+    height: auto;
+
 }
 
-.containerPrueba{
-    width: 200px;
-    height: 200px;
-    background-color: #0f0f0f;
+#cuadroCenter{
+    margin: 0 5%;
 }
+
+.cuadro p{
+    padding: 2.5%;
+    text-align: justify;
+}
+
+
 
