@@ -6,7 +6,7 @@
 .contenedorPrincipal{
     width: 100%;
     height: auto;
-    position: relative;
+    position: absolute;
     background-color: #0f0f0f;
     justify-content: center;
 }
@@ -15,7 +15,7 @@
     width: 100%;
     height: auto;
     opacity: 0.5;
-    position: absolute;
+    position: relative;
 }
 
 .contenedorTotal{
