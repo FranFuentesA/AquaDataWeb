@@ -117,11 +117,14 @@ body {
     flex-flow: row wrap;
 }
 .CuadroSec2 {
-    flex-grow: 1;
+    display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    flex-direction:  column;
+    flex-grow: 1;
     background-color: #e8e8e8;
-    width: 23%;
+    flex-basis: 30%;
+    min-width: 30%;
     margin: 0.3%;
     padding: 0 1% 0 1%;
 }
@@ -156,10 +159,9 @@ body {
 }
 
 .IconosSeccion2{
-    width: auto;
-    height: 15%;
-   padding-top: 25%;
-}
+     width: auto;
+     height: 15%;
+ }
 
 
 .BotonDescender2 a{
@@ -223,7 +225,6 @@ body {
     flex-basis: 50%;
     align-self: center;
     justify-items: start;
-
 }
 
 .imgLogos{
@@ -245,7 +246,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+    padding-right: 20px;
+    height: auto;
+    width: 100%;
 }
 
 .iconosFunciones{
@@ -253,17 +256,117 @@ body {
 }
 
 #iconoFuncionesRv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 5%;
+
 }
 
 .conjuntoIcnos{
     width: 13%;
     height: 5%;
+    margin: 0 1% 0 1%;
 }
 
 .google, .ios{
     margin: 2%;
+    flex-basis: 50%;
+    width: 50%;
 }
+
+.BotonDescender3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+.BotonDescender3 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.BotonDescender3 img{
+    width: 40%;
+    height: auto;
+}
+
+/*---------------------Seccion 4---------------------*/
+
+
+.Seccion4 {
+    background: url(../img/foto_aquadata.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedorFormularios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.etiqueta{
+    color: #ffffff;
+}
+
+.formularioAsunto, .formularioEmail{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.5%;
+}
+
+.campoAsunto textarea, .campoEmail textarea{
+    background-color: transparent;
+    border: 1px solid #000000;
+    scrollbar-arrow-color: #000066;
+    scrollbar-base-color: #000033;
+    scrollbar-track-color: #666633;
+    scrollbar-face-color: #cc9933;
+    scrollbar-shadow-color: #DDDDDD;
+    scrollbar-highlight-color: #CCCCCC;
+    margin-left: 15%;
+    resize: none;
+}
+
+#asunto{
+    height: 200px;
+    width: auto;
+}
+
+.btn {
+    -webkit-box-shadow: 6px 6px 8px #666666;
+    -moz-box-shadow: 6px 6px 8px #666666;
+    box-shadow: 6px 6px 8px #666666;
+    color: #0EB3BF;
+    font-size: 60px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #e2ebf0;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
 
 
 
