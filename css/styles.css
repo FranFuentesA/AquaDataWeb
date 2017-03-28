@@ -304,10 +304,7 @@ body {
     .seccion1Moviles {
         margin-bottom: 5%;
     }
-
-
 }
-
 
 /*---------- SECCIÓN 2 ----------*/
 .TituloCuadro2 {
@@ -383,7 +380,6 @@ body {
     width: 40%;
     height: auto;
 }
-
 
 @media (max-width: 768px) {
 
