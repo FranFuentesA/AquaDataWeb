@@ -428,8 +428,20 @@ body {
     margin: 0 1% 0 1%;
 }
 
-.google, .ios {
-    margin: 2%;
+.google {
+    margin-right: 2%;
+    flex-basis: 90%;
+    width: 90%;
+    height: auto;
+}
+
+.ios {
+    flex-basis: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.iconoAndroid, .iconoIos {
     flex-basis: 50%;
     width: 50%;
 }
@@ -521,10 +533,10 @@ body {
     cursor: pointer;
     color: #0EB3BF;
     font-size: .4em;
-    padding: 5px 130px;
+    padding: 5px 11.5em;
     text-decoration: none;
     text-shadow: 0 1px 100px #2f6627;
-    margin-left: 22%;
+    margin-left: 23%;
 }
 
 .btn:hover {
