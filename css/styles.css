@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*-------------------- Gradilla de letra responsive --------------------*/
 @media (max-width: 7680px) {
     body {
@@ -553,7 +555,7 @@ body {
 
 /*-------------------- FOOTER --------------------*/
 footer {
-    background: rgb(94, 134, 51);
+    background: rgb(14, 179, 191);
     padding: 4% 0;
     color: #fff;
     text-align: center;
@@ -596,6 +598,7 @@ footer {
 
 .Avisos div a {
     color: #fff;
+    text-decoration: none;
 }
 
 .Copyright {
