@@ -13,6 +13,7 @@ html, body {
 }
 
 body {
+    margin: 0 auto;
     font-family: Roboto-Black, arial, sans-serif;
 }
 /*-------------------- HEADER --------------------*/
@@ -115,7 +116,7 @@ body {
     justify-content: center;
     margin: 10% 0;
     font-size: 2em;
-    font-weight: bold;
+font-weight: bold;
 }
 
 .ContenedorCuadros2 {
@@ -314,7 +315,16 @@ body {
     justify-content: center;
 }
 
-.contenedorFormularios {
+.TituloSeccion4{
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 6.5%;
+    color: #ffffff;
+
+
+}
+
+.contenedorFormularios{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -333,13 +343,14 @@ body {
 
 .campoAsunto textarea, .campoEmail textarea {
     background-color: transparent;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     scrollbar-arrow-color: #000066;
     scrollbar-base-color: #000033;
     scrollbar-track-color: #666633;
     scrollbar-face-color: #cc9933;
     scrollbar-shadow-color: #DDDDDD;
     scrollbar-highlight-color: #CCCCCC;
+    font-size: 1em;
     margin-left: 15%;
     resize: none;
 }
@@ -350,16 +361,39 @@ body {
 }
 
 .btn {
-    -webkit-box-shadow: 6px 6px 8px #666666;
-    -moz-box-shadow: 6px 6px 8px #666666;
-    box-shadow: 6px 6px 8px #666666;
-    color: #0EB3BF;
-    font-size: 60px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
+    -moz-box-shadow: 1px 4px 8px 4px #757d73;
+    -webkit-box-shadow: 1px 4px 8px 4px #757d73;
+    box-shadow: 1px 4px 8px 4px #000000;
+    background-color: #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    color:#0EB3BF;
+    font-size:28px;
+    padding:5px 130px;
+    text-decoration:none;
+    text-shadow:0 1px 100px #2f6627;
+    margin-left: 22%;
 }
 
 .btn:hover {
-    background: #e2ebf0;
-    text-decoration: none;
+    background-color:#e0e0e0;
 }
+.btn:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
