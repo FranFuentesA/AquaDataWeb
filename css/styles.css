@@ -79,64 +79,71 @@
         font-size: 22px;
     }
 }
-@media (max-width: 896px) {
-    body {
-        font-size: 21px;
-    }
-}
-@media (max-width: 768px) {
+@media (max-width: 938px) {
     body {
         font-size: 20px;
     }
 }
-@media (max-width: 640px) {
-    body {
-        font-size: 19px;
-    }
-}
-@media (max-width: 608px) {
+
+@media (max-width: 853px) {
     body {
         font-size: 18px;
     }
 }
-@media (max-width: 576px) {
-    body {
-        font-size: 17px;
-    }
-}
-@media (max-width: 480px) {
+
+@media (max-width: 768px) {
     body {
         font-size: 16px;
     }
 }
-@media (max-width: 470px) {
-    body {
-        font-size: 15px;
-    }
-}
-@media (max-width: 460px) {
+@media (max-width: 640px) {
     body {
         font-size: 14px;
     }
 }
-@media (max-width: 426px) {
+@media (max-width: 608px) {
+    body {
+        font-size: 17px;
+    }
+}
+@media (max-width: 576px) {
+    body {
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+}
+@media (max-width: 470px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media (max-width: 460px) {
     body {
         font-size: 13px;
     }
 }
-@media (max-width: 392px) {
+@media (max-width: 426px) {
     body {
         font-size: 12px;
     }
 }
-@media (max-width: 358px) {
+@media (max-width: 392px) {
     body {
         font-size: 11px;
     }
 }
-@media (max-width: 256px) {
+@media (max-width: 358px) {
     body {
         font-size: 10px;
+    }
+}
+@media (max-width: 256px) {
+    body {
+        font-size: 9px;
     }
 }
 
@@ -181,7 +188,7 @@ body {
 .TituloSeccion1 {
     color: #ffffff;
     text-align: center;
-    font-size: 2.8em;
+    font-size: 2.5em;
 }
 
 .ContenedorCuadros {
@@ -198,17 +205,19 @@ body {
     border-color: #ffffff;
     border-style: solid;
     color: #fff;
-    width: 15%;
+    flex-basis: 20%;
+    width: 20%;
     padding: 3% 1%;
 }
 
 .TituloCuadro {
     margin: 10% 0;
-    font-size: 1.2em;
+    font-size: .9em;
     font-weight: bold;
 }
 
 .TextoCuadro {
+    font-family: Roboto-Black, arial, sans-serif;
     text-align: left;
     font-size: 0.6em;
 }
