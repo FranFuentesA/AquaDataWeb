@@ -1,3 +1,135 @@
+/*-------------------- Gradilla de letra responsive --------------------*/
+@media (max-width: 7680px) {
+    body {
+        font-size: 85px;
+    }
+}
+@media (max-width: 6912px) {
+    body {
+        font-size: 80px;
+    }
+}
+@media (max-width: 6144px) {
+    body {
+        font-size: 75px;
+    }
+}
+@media (max-width: 3840px) {
+    body {
+        font-size: 70px;
+    }
+}
+@media (max-width: 3584px) {
+    body {
+        font-size: 65px;
+    }
+}
+@media (max-width: 3328px) {
+    body {
+        font-size: 60px;
+    }
+}
+@media (max-width: 2560px) {
+    body {
+        font-size: 55px;
+    }
+}
+@media (max-width: 2432px) {
+    body {
+        font-size: 50px;
+    }
+}
+@media (max-width: 2304px) {
+    body {
+        font-size: 45px;
+    }
+}
+@media (max-width: 1920px) {
+    body {
+        font-size: 40px;
+    }
+}
+@media (max-width: 1792px) {
+    body {
+        font-size: 35px;
+    }
+}
+@media (max-width: 1664px) {
+    body {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1280px) {
+    body {
+        font-size: 28px;
+    }
+}
+@media (max-width: 1194px) {
+    body {
+        font-size: 26px;
+    }
+}
+@media (max-width: 1109px) {
+    body {
+        font-size: 24px;
+    }
+}
+@media (max-width: 1024px) {
+    body {
+        font-size: 22px;
+    }
+}
+@media (max-width: 640px) {
+    body {
+        font-size: 20px;
+    }
+}
+@media (max-width: 608px) {
+    body {
+        font-size: 18px;
+    }
+}
+@media (max-width: 576px) {
+    body {
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media (max-width: 470px) {
+    body {
+        font-size: 12px;
+    }
+}
+@media (max-width: 460px) {
+    body {
+        font-size: 11px;
+    }
+}
+@media (max-width: 426px) {
+    body {
+        font-size: 10px;
+    }
+}
+@media (max-width: 392px) {
+    body {
+        font-size: 9px;
+    }
+}
+@media (max-width: 358px) {
+    body {
+        font-size: 8px;
+    }
+}
+@media (max-width: 256px) {
+    body {
+        font-size: 7px;
+    }
+}
+
 /*-----------------  BODY  --------------------*/
 body {
     margin: 0 auto;
@@ -28,7 +160,7 @@ body {
 .TituloSeccion1 {
     color: #ffffff;
     text-align: center;
-    font-size: 5em;
+    font-size: 2.8em;
 }
 
 .ContenedorCuadros {
@@ -51,13 +183,13 @@ body {
 
 .TituloCuadro {
     margin: 10% 0;
-    font-size: 2.5em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .TextoCuadro {
     text-align: left;
-    font-size: 1.5em;
+    font-size: 0.6em;
 }
 
 .TextoCuadro span {
@@ -67,7 +199,7 @@ body {
 .ListaCuadro {
     align-self: flex-start;
     margin-top: 1%;
-    font-size: 1.5em;
+    font-size: 0.6em;
 }
 
 .ListaCuadro li {
@@ -107,8 +239,9 @@ body {
     display: flex;
     justify-content: center;
     margin: 10% 0;
-    font-size: 2em;
-font-weight: bold;
+    font-size: .8em;
+    font-weight: bold;
+    text-align: center;
 }
 
 .ContenedorCuadros2{
@@ -154,7 +287,7 @@ font-weight: bold;
     margin: 5% 0 0.5% 0;
     padding: 1%;
     text-align: center;
-    font-size: 4em;
+    font-size: 1.4em;
     align-self: center;
 }
 
@@ -181,7 +314,7 @@ font-weight: bold;
 .tituloSeccion3{
     margin: 8% 0 5% 0;
     color: #74C6D1;
-    font-size: 3em;
+    font-size: 1.3em;
     font-weight: bold;
     text-align: center;
 }
@@ -237,7 +370,7 @@ font-weight: bold;
 }
 
 .imgLogos h1{
-    font-size: 2.5em;
+    font-size: 1em;
     color: #8c8c8c;
     text-align: center;
 }
@@ -311,12 +444,10 @@ font-weight: bold;
 }
 
 .TituloSeccion4{
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: bold;
     padding-left: 6.5%;
     color: #ffffff;
-
-
 }
 
 .contenedorFormularios{
@@ -328,6 +459,7 @@ font-weight: bold;
 
 .etiqueta{
     color: #ffffff;
+    font-size: 0.6em;
 }
 
 .formularioAsunto, .formularioEmail{
@@ -345,7 +477,7 @@ font-weight: bold;
     scrollbar-face-color: #cc9933;
     scrollbar-shadow-color: #DDDDDD;
     scrollbar-highlight-color: #CCCCCC;
-    font-size: 1em;
+    font-size: .4em;
     margin-left: 15%;
     resize: none;
 }
@@ -364,7 +496,7 @@ font-weight: bold;
     display:inline-block;
     cursor:pointer;
     color:#0EB3BF;
-    font-size:28px;
+    font-size:.4em;
     padding:5px 130px;
     text-decoration:none;
     text-shadow:0 1px 100px #2f6627;
