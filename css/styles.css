@@ -196,6 +196,11 @@ body {
     font-size: 2.5em;
 }
 
+.Iconos{
+    width:30%;
+    height: auto;
+}
+
 .ContenedorCuadros {
     display: flex;
     flex-direction: row;
@@ -567,12 +572,11 @@ body {
 
 /*---------- SECCIÓN 4 ----------*/
 .Seccion4 {
-    background: url(../img/foto_aquadata.jpg) no-repeat;
+    background: url(../img/foto_aquadata.jpg)  no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 5% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -596,10 +600,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 9%;
+    padding: 5% 9% 5% 0;
     background: url(../img/360@3x.png) no-repeat;
-    background-size: contain;
+    background-color: rgba(0,0,0,0.15);
+    background-size: 30%;
     background-position: center;
+    height: 100%;
 }
 
 .etiqueta {
