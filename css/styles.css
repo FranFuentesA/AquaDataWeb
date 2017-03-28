@@ -1,18 +1,28 @@
-/*-----------------  BODY  --------------------*/
-body {
-    margin: 0 auto;
-    font-family: Roboto-Black, arial, sans-serif;
+/*-------------------- ESTILOS GLOBALES --------------------*/
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
+html {
+    box-sizing: border-box;
+}
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
 
+body {
+    font-family: Roboto-Black, arial, sans-serif;
+}
+/*-------------------- HEADER --------------------*/
+/*--------------------  BODY  --------------------*/
 .ContenedorSecciones {
     display: flex;
     flex-direction: column;
 }
 
-/*---------------------Seccion 1---------------------*/
-
+/*---------- SECCIÓN 1 ----------*/
 .Seccion1 {
     background: url(../img/secPrimBack_recortada_oscurecido.jpg) no-repeat;
     -webkit-background-size: cover;
@@ -57,7 +67,7 @@ body {
 
 .TextoCuadro {
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .TextoCuadro span {
@@ -88,7 +98,7 @@ body {
     width: 100%;
 }
 
-.BotonDescender a{
+.BotonDescender a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,10 +109,7 @@ body {
     width: 37%;
 }
 
-
-/*---------------------Seccion 2---------------------*/
-
-
+/*---------- SECCIÓN 2 ----------*/
 .TituloCuadro2 {
     display: flex;
     justify-content: center;
@@ -111,16 +118,17 @@ body {
     font-weight: bold;
 }
 
-.ContenedorCuadros2{
+.ContenedorCuadros2 {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
 }
+
 .CuadroSec2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:  column;
+    flex-direction: column;
     flex-grow: 1;
     background-color: #e8e8e8;
     flex-basis: 30%;
@@ -129,13 +137,13 @@ body {
     padding: 0 1% 0 1%;
 }
 
-.CuadroSec2 div{
+.CuadroSec2 div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#fondoColor,#fondoColor2,#fondoColor3{
+#fondoColor, #fondoColor2, #fondoColor3 {
     background-color: #74C6D1;
 }
 
@@ -147,7 +155,7 @@ body {
     height: 5px;
 }
 
-.tituloSeccion2{
+.tituloSeccion2 {
     box-shadow: 0px 2px 50px rgba(0, 0, 0, 25);
     color: #ffffff;
     background-color: #74C6D1;
@@ -158,27 +166,25 @@ body {
     align-self: center;
 }
 
-.IconosSeccion2{
-     width: auto;
-     height: 15%;
- }
+.IconosSeccion2 {
+    width: auto;
+    height: 15%;
+}
 
-
-.BotonDescender2 a{
+.BotonDescender2 a {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-.BotonDescender2 img{
+.BotonDescender2 img {
     width: 40%;
     height: auto;
 }
 
-/*---------------------Seccion 3---------------------*/
-
-.tituloSeccion3{
+/*---------- SECCIÓN 3 ----------*/
+.tituloSeccion3 {
     margin: 8% 0 5% 0;
     color: #74C6D1;
     font-size: 3em;
@@ -186,39 +192,39 @@ body {
     text-align: center;
 }
 
-.ContenedorMoviles{
+.ContenedorMoviles {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.seccion1Moviles,.seccion2Moviles{
-   display: flex;
+.seccion1Moviles, .seccion2Moviles {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-basis: 50%;
 }
 
-.imagenMovil1, .imagenMovil2{
+.imagenMovil1, .imagenMovil2 {
     display: flex;
     height: auto;
     width: 80%;
     flex-basis: 50%;
 }
 
-.iconoClicFish{
+.iconoClicFish {
     height: auto;
     width: 95%;
     margin-top: 30%;
 }
 
-.iconoRiver{
+.iconoRiver {
     height: auto;
     width: 60%;
     margin-top: 18%;
 }
 
-.imgMovil,.imgLogos{
+.imgMovil, .imgLogos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,7 +233,7 @@ body {
     justify-items: start;
 }
 
-.imgLogos{
+.imgLogos {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -236,13 +242,13 @@ body {
     flex-basis: 50%;
 }
 
-.imgLogos h1{
+.imgLogos h1 {
     font-size: 2.5em;
     color: #8c8c8c;
     text-align: center;
 }
 
-.iconosFunciones, .iconosTienda{
+.iconosFunciones, .iconosTienda {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -251,11 +257,11 @@ body {
     width: 100%;
 }
 
-.iconosFunciones{
+.iconosFunciones {
     margin-bottom: 15%;
 }
 
-#iconoFuncionesRv{
+#iconoFuncionesRv {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -263,13 +269,13 @@ body {
 
 }
 
-.conjuntoIcnos{
+.conjuntoIcnos {
     width: 13%;
     height: 5%;
     margin: 0 1% 0 1%;
 }
 
-.google, .ios{
+.google, .ios {
     margin: 2%;
     flex-basis: 50%;
     width: 50%;
@@ -283,21 +289,19 @@ body {
     margin-bottom: 5%;
 }
 
-.BotonDescender3 a{
+.BotonDescender3 a {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-.BotonDescender3 img{
+.BotonDescender3 img {
     width: 40%;
     height: auto;
 }
 
-/*---------------------Seccion 4---------------------*/
-
-
+/*---------- SECCIÓN 4 ----------*/
 .Seccion4 {
     background: url(../img/foto_aquadata.jpg) no-repeat;
     -webkit-background-size: cover;
@@ -310,24 +314,24 @@ body {
     justify-content: center;
 }
 
-.contenedorFormularios{
+.contenedorFormularios {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.etiqueta{
+.etiqueta {
     color: #ffffff;
 }
 
-.formularioAsunto, .formularioEmail{
+.formularioAsunto, .formularioEmail {
     display: flex;
     flex-direction: row;
     margin-bottom: 2.5%;
 }
 
-.campoAsunto textarea, .campoEmail textarea{
+.campoAsunto textarea, .campoEmail textarea {
     background-color: transparent;
     border: 1px solid #000000;
     scrollbar-arrow-color: #000066;
@@ -340,7 +344,7 @@ body {
     resize: none;
 }
 
-#asunto{
+#asunto {
     height: 200px;
     width: auto;
 }
@@ -359,17 +363,3 @@ body {
     background: #e2ebf0;
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
