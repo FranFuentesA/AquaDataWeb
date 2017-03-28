@@ -171,10 +171,98 @@ body {
 }
 
 /*-------------------- HEADER --------------------*/
+
+
+#idioma {
+    position: absolute;
+    right: 13%;
+    top: 7%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+
+    /* Se ocultará el botón de manera temporal */
+    display: none;
+}
+
+
+header{
+    position: relative;
+}
+
+#botonNavegacion {
+    position: absolute;
+    right: 5.25%;
+    top: 5.75%;
+    height: 10.25%;
+    width: auto;
+    /* Se ocultará el botón de manera temporal */
+    display: none;
+}
+
+.Portada{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/fotoCabecera.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 26em;
+}
+
+.contenedorLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#logo{
+    width: 15%;
+    height: auto;
+    padding-top: 1%;
+}
+
+
+
+.tituloHeader{
+    font-size: 0.5em;
+    color:  rgb(14, 179, 191);
+}
+
+.BotonDescenderHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 5%;
+    height: 5%;
+    width: 100%;
+}
+
+.BotonDescenderHeader a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.BotonDescenderHeader img {
+    width: 37%;
+}
+
 /*--------------------  BODY  --------------------*/
 .ContenedorSecciones {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*---------- SECCIÓN 1 ----------*/
@@ -590,9 +678,8 @@ body {
 .TituloSeccion4 {
     font-size: 1.2em;
     font-weight: bold;
-    padding-left: 6.5%;
+    padding-left: 10%;
     color: #ffffff;
-
 }
 
 .contenedorFormularios {
