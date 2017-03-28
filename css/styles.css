@@ -266,6 +266,49 @@ body {
     width: 37%;
 }
 
+@media (max-width: 768px) {
+
+    .ContenedorCuadros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Cuadro {
+        flex-basis: 40%;
+        width: 40%;
+    }
+
+    .TituloCuadro {
+        margin: 10% 0;
+        font-size: 1.5em;
+    }
+
+    .TextoCuadro {
+        font-size: 1.1em;
+    }
+
+    #CuadroCentral {
+        margin: 5% 0;
+    }
+
+    .ListaCuadro {
+        font-size: 1.1em;
+    }
+
+    .ContenedorMoviles {
+        flex-direction: column;
+    }
+
+    .seccion1Moviles {
+        margin-bottom: 5%;
+    }
+
+
+}
+
+
 /*---------- SECCIÓN 2 ----------*/
 .TituloCuadro2 {
     display: flex;
@@ -341,6 +384,36 @@ body {
     height: auto;
 }
 
+
+@media (max-width: 768px) {
+
+    .tituloSeccion2 {
+        font-size: 4em;
+        margin-bottom: 5%;
+    }
+
+    .ContenedorCuadros2 {
+        flex-flow: column nowrap;
+    }
+
+    .CuadroSec2{
+        height: 500px;
+    }
+
+    .IconosSeccion2 {
+        width: 20%;
+        height: auto;
+        margin-top: 15%;
+    }
+
+    .TituloCuadro2 {
+        font-size: 2em;
+
+    }
+
+
+}
+
 /*---------- SECCIÓN 3 ----------*/
 .tituloSeccion3 {
     margin: 8% 0 5% 0;
@@ -395,7 +468,7 @@ body {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    width: 5%;
+    width: 50%;
     height: auto;
     flex-basis: 50%;
 }
@@ -469,6 +542,31 @@ body {
 .BotonDescender3 img {
     width: 40%;
     height: auto;
+}
+
+@media (max-width: 768px) {
+
+    .tituloSeccion3 {
+        font-size: 4em;
+    }
+
+    .ContenedorMoviles {
+        flex-direction: column;
+    }
+
+    .seccion1Moviles, .seccion2Moviles {
+        flex-direction: column;
+    }
+
+    .iconoClicFish, .iconoRiver {
+        margin: 5% 0;
+    }
+
+    .imgLogos {
+        width: 100%;
+        flex-basis: 100%;
+        padding: 10%;
+    }
 }
 
 /*---------- SECCIÓN 4 ----------*/
@@ -551,6 +649,12 @@ body {
 .btn:active {
     position: relative;
     top: 1px;
+}
+
+@media (max-width: 768px) {
+    .BotonDescender, .BotonDescender2 img, .BotonDescender3 img {
+        display: none;
+    }
 }
 
 /*-------------------- FOOTER --------------------*/
