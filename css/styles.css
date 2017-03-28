@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*-------------------- Gradilla de letra responsive --------------------*/
 @media (max-width: 7680px) {
     body {
@@ -302,10 +304,7 @@ body {
     .seccion1Moviles {
         margin-bottom: 5%;
     }
-
-
 }
-
 
 /*---------- SECCIÓN 2 ----------*/
 .TituloCuadro2 {
@@ -381,7 +380,6 @@ body {
     width: 40%;
     height: auto;
 }
-
 
 @media (max-width: 768px) {
 
@@ -666,7 +664,7 @@ body {
 
 /*-------------------- FOOTER --------------------*/
 footer {
-    background: rgb(94, 134, 51);
+    background: rgb(14, 179, 191);
     padding: 4% 0;
     color: #fff;
     text-align: center;
@@ -709,6 +707,7 @@ footer {
 
 .Avisos div a {
     color: #fff;
+    text-decoration: none;
 }
 
 .Copyright {
