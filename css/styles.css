@@ -580,6 +580,11 @@ body {
     justify-content: center;
 }
 
+#360fondo{
+    width: 100% ;
+    height: auto;
+}
+
 .TituloSeccion4 {
     font-size: 1.2em;
     font-weight: bold;
@@ -593,6 +598,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-right: 9%;
+    background: url(../img/360@3x.png) no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .etiqueta {
