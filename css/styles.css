@@ -1,3 +1,145 @@
+/*-------------------- GRADILLA DE LETRA RESPONSIVE --------------------*/
+@media (max-width: 7680px) {
+    body {
+        font-size: 85px;
+    }
+}
+@media (max-width: 6912px) {
+    body {
+        font-size: 80px;
+    }
+}
+@media (max-width: 6144px) {
+    body {
+        font-size: 75px;
+    }
+}
+@media (max-width: 3840px) {
+    body {
+        font-size: 70px;
+    }
+}
+@media (max-width: 3584px) {
+    body {
+        font-size: 65px;
+    }
+}
+@media (max-width: 3328px) {
+    body {
+        font-size: 60px;
+    }
+}
+@media (max-width: 2560px) {
+    body {
+        font-size: 55px;
+    }
+}
+@media (max-width: 2432px) {
+    body {
+        font-size: 50px;
+    }
+}
+@media (max-width: 2304px) {
+    body {
+        font-size: 45px;
+    }
+}
+@media (max-width: 1920px) {
+    body {
+        font-size: 40px;
+    }
+}
+@media (max-width: 1792px) {
+    body {
+        font-size: 35px;
+    }
+}
+@media (max-width: 1664px) {
+    body {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1280px) {
+    body {
+        font-size: 28px;
+    }
+}
+@media (max-width: 1194px) {
+    body {
+        font-size: 26px;
+    }
+}
+@media (max-width: 1109px) {
+    body {
+        font-size: 24px;
+    }
+}
+@media (max-width: 1024px) {
+    body {
+        font-size: 22px;
+    }
+}
+@media (max-width: 896px) {
+    body {
+        font-size: 21px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+}
+@media (max-width: 640px) {
+    body {
+        font-size: 19px;
+    }
+}
+@media (max-width: 608px) {
+    body {
+        font-size: 18px;
+    }
+}
+@media (max-width: 576px) {
+    body {
+        font-size: 17px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+}
+@media (max-width: 470px) {
+    body {
+        font-size: 15px;
+    }
+}
+@media (max-width: 460px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media (max-width: 426px) {
+    body {
+        font-size: 13px;
+    }
+}
+@media (max-width: 392px) {
+    body {
+        font-size: 12px;
+    }
+}
+@media (max-width: 358px) {
+    body {
+        font-size: 11px;
+    }
+}
+@media (max-width: 256px) {
+    body {
+        font-size: 10px;
+    }
+}
+
 /*-------------------- ESTILOS GLOBALES --------------------*/
 *, *:before, *:after {
     box-sizing: inherit;
@@ -384,17 +526,115 @@ body {
     top: 1px;
 }
 
+/*-------------------- FOOTER --------------------*/
+footer {
+    background: rgb(94, 134, 51);
+    padding: 4% 0;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.ContactoRedesSociales {
+    flex-basis: 35%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
 
+.ContactoRedesSociales a {
+    flex-basis: 14%;
+    width: 14%;
+    margin: 0 1%;
+}
 
+.ContactoRedesSociales a img {
+    width: 80%;
+    height: auto;
+}
 
+.Avisos {
+    flex-basis: 45%;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.65em;
+}
 
+.Avisos div {
+    margin: 0 2%;
+}
 
+.Avisos div a {
+    color: #fff;
+}
 
+.Copyright {
+    flex-basis: 20%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.65em;
+}
 
+@media (max-width: 1280px) {
+    .ContactoRedesSociales, .Avisos, .Copyright {
+        width: 100%;
+        flex-basis: 100%;
+    }
 
+    .ContactoRedesSociales a {
+        flex-basis: 12%;
+        width: 12%;
+    }
 
+    .ContactoRedesSociales div a img {
+        width: 70%;
+        height: auto;
+    }
 
+    #facebook img {
+        content: url("../img/facebook@2x.png");
+    }
 
+    #twitter img {
+        content: url("../img/twitter@2x.png");
+    }
 
+    #instagram img {
+        content: url("../img/instagram@2x.png");
+    }
 
+    #youtube img {
+        content: url("../img/youtube@2x.png");
+    }
+
+    #vimeo img {
+        content: url("../img/vimeo@2x.png");
+    }
+
+    .Avisos {
+        padding: 5% 0;
+        font-size: 0.9em;
+    }
+
+    .Copyright {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .Avisos {
+        padding: 6% 0;
+    }
+
+    .Avisos div {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
