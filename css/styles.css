@@ -16,6 +16,7 @@ body {
     margin: 0 auto;
     font-family: Roboto-Black, arial, sans-serif;
 }
+
 /*-------------------- HEADER --------------------*/
 /*--------------------  BODY  --------------------*/
 .ContenedorSecciones {
@@ -116,7 +117,7 @@ body {
     justify-content: center;
     margin: 10% 0;
     font-size: 2em;
-font-weight: bold;
+    font-weight: bold;
 }
 
 .ContenedorCuadros2 {
@@ -315,16 +316,15 @@ font-weight: bold;
     justify-content: center;
 }
 
-.TituloSeccion4{
+.TituloSeccion4 {
     font-size: 2em;
     font-weight: bold;
     padding-left: 6.5%;
     color: #ffffff;
 
-
 }
 
-.contenedorFormularios{
+.contenedorFormularios {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -365,22 +365,23 @@ font-weight: bold;
     -webkit-box-shadow: 1px 4px 8px 4px #757d73;
     box-shadow: 1px 4px 8px 4px #000000;
     background-color: #ffffff;
-    display:inline-block;
-    cursor:pointer;
-    color:#0EB3BF;
-    font-size:28px;
-    padding:5px 130px;
-    text-decoration:none;
-    text-shadow:0 1px 100px #2f6627;
+    display: inline-block;
+    cursor: pointer;
+    color: #0EB3BF;
+    font-size: 28px;
+    padding: 5px 130px;
+    text-decoration: none;
+    text-shadow: 0 1px 100px #2f6627;
     margin-left: 22%;
 }
 
 .btn:hover {
-    background-color:#e0e0e0;
+    background-color: #e0e0e0;
 }
+
 .btn:active {
-    position:relative;
-    top:1px;
+    position: relative;
+    top: 1px;
 }
 
 
