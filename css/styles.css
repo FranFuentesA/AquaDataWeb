@@ -518,8 +518,8 @@ header {
 }
 
 #fondoColor, #fondoColor2, #fondoColor3 {
-    background-color: #74C6D1;
-}
+     background-color: #74C6D1;
+ }
 
 .BotonDescender2 {
     display: flex;
@@ -553,6 +553,10 @@ header {
 }
 
 @media (max-width: 768px) {
+
+    .seccion2 {
+        height: auto;
+    }
 
     .tituloSeccion2 {
         font-size: 4em;
@@ -790,7 +794,6 @@ header {
     display: flex;
     flex-direction: row;
     margin-bottom: 2.5%;
-    flex-basis: 50%;
     width: 50%;
 }
 
@@ -799,6 +802,10 @@ header {
     width: 90%;
     display: flex;
     flex-direction: column;
+}
+
+.campoEmail{
+    overflow: hidden;
 }
 
 .campoAsunto textarea, .campoEmail textarea {
@@ -815,10 +822,71 @@ header {
     resize: none;
     font-size: .7em;
     color: white;
+    overflow: hidden;
+    white-space: pre-wrap;
 }
 
 .campoAsunto:hover textarea, .campoEmail:hover textarea{
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+#fondoColor, #fondoColor2, #fondoColor3{
+    border: none;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    transform-style: preserve-3d;
+}
+
+#CuadroCentral2, #CuadroIzquierda, #cuadroDerecha{
+    border: none;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    transform-style: preserve-3d;
+}
+
+#fondoColor:after, #fondoColor2:after, #fondoColor3:after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #74C6D1;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: 'Funciona Prim';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+
+#CuadroCentral2:after, #CuadroIzquierda:after, #cuadroDerecha:after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #d11600;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    transform-style: preserve-3d;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: 'Funciona Prim';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+
+
+
+.CuadroSec2:hover{
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100%);
 }
 
 #asunto {

@@ -90,7 +90,7 @@
         <div class="tituloSeccion2" id="sec2">utilidad versátil de <span>nuestras soluciones</span></div>
         <div class="ContenedorCuadros2">
 
-            <div class="CuadroSec2">
+            <div class="CuadroSec2" id="CuadroIzquierda">
                 <img src="img/pesca_deportiva@3x.png" class="IconosSeccion2">
                 <div class="TituloCuadro2" >Pesca Deportiva</div>
             </div>
@@ -100,7 +100,7 @@
                 <div class="TituloCuadro2" >Depuración</div>
             </div>
 
-            <div class="CuadroSec2">
+            <div class="CuadroSec2" id="cuadroDerecha">
                 <img src="img/africultura@3x.png" class="IconosSeccion2">
                 <div class="TituloCuadro2">Agricultura y regadía</div>
 
@@ -190,7 +190,8 @@
                     <label>E-mail</label>
                 </div>
                 <div class="campoEmail">
-                     <textarea id="emailEfecto" name="texto" onKeyDown="efectoMail(0)" onKeyUp="efectoMail(0)" onmouseover="efectoMail(1)" onmouseleave="efectoMail(2)" cols="1"></textarea>
+                    <textarea id="emailEfecto" name="texto" onKeyDown="efectoMail(0)" onKeyUp="efectoMail(0)"
+                              onmouseover="efectoMail(1)" onmouseleave="efectoMail(2)" rows="1" maxlength="50" ></textarea>
                 </div>
             </div>
 
@@ -199,7 +200,8 @@
                      <label>Asunto</label>
                 </div>
                 <div class="campoAsunto">
-                   <textarea id="asuntoEfecto" name="texto" onKeyDown="efectoAsunto(0)" onKeyUp="efectoAsunto(0)" onmouseover="efectoAsunto(1)" onmouseleave="efectoAsunto(2)" rows="15"></textarea>
+                    <textarea id="asuntoEfecto" name="texto" onKeyDown="efectoAsunto(0)" onKeyUp="efectoAsunto(0)"
+                              onmouseover="efectoAsunto(1)" onmouseleave="efectoAsunto(2)" rows="15" maxlength="2000"></textarea>
                     <div class="botonEnviar">
                         <input type="button" class="btn" value="enviar">
                     </div>
