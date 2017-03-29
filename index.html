@@ -14,16 +14,60 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto-Black">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto-Bold">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8">
+    </script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 
-    <!-- Bootstrap Core CSS -->
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">-->
+    <script>
+        $(function(){
+
+        $('a[href*=#]').click(function() {
+
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                && location.hostname == this.hostname) {
+
+                var $target = $(this.hash);
+
+                $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+                if ($target.length) {
+
+                    var targetOffset = $target.offset().top;
+
+                    $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                    return false;
+
+                }
+
+            }
+
+        });
+
+    });
+    </script>
+
 </head>
 <body>
-<section class="ContenedorSecciones">
 
-    <section class="Seccion1">
+    <header>
+        <section class="Portada">
+            <div id="idioma">ES/EN</div>
+            <div class="contenedorLogo">
+                <img id="logo" src="img/logo@3x.png" >
+                <h1 class="tituloHeader">DATOS FLUVIALES EN PRIMERA PERSONA</h1>
+            </div>
+            <div class="BotonDescenderHeader">
+                <a href="#sec1"><img src="img/navegador_parallax@3x.png"></a>
+            </div>
+            <!--<img id="botonNavegacion" src="img/menu_despl@3x.png" >-->
+
+        </section>
+    </header>
+
+    <section class="Seccion1" id="sec1">
         <h1 class="TituloSeccion1">¿AquaData?</h1>
         <div class="ContenedorCuadros">
 
@@ -57,13 +101,13 @@
 
         </div>
         <div class="BotonDescender">
-            <a href=""><img src="img/navegador_parallax@3x.png"></a>
+            <a href="#sec2"><img src="img/navegador_parallax@3x.png"></a>
         </div>
     </section>
 
     <section class="seccion2">
 
-        <div class="tituloSeccion2">utilidad versátil de <span>nuestras soluciones</span></div>
+        <div class="tituloSeccion2" id="sec2">utilidad versátil de <span>nuestras soluciones</span></div>
         <div class="ContenedorCuadros2">
 
             <div class="CuadroSec2">
@@ -98,11 +142,11 @@
             </div>
         </div>
         <div class="BotonDescender2">
-            <a href=""><img src="img/navegador_parallax@3x.png"></a>
+            <a href="#sec3"><img src="img/navegador_parallax@3x.png"></a>
         </div>
     </section>
     <section class="Seccion3">
-        <div class="tituloSeccion3">nuestros productos</div>
+        <div class="tituloSeccion3" id="sec3">nuestros productos</div>
         <div class="ContenedorMoviles">
             <div class="seccion1Moviles">
                 <div class="imgMovil">
@@ -154,10 +198,11 @@
             </div>
         </div>
         <div class="BotonDescender3">
-            <a href=""><img src="img/navegador_parallax@3x.png"></a>
+            <a href="#sec4"><img src="img/navegador_parallax@3x.png"></a>
         </div>
     </section>
-    <section class="Seccion4">
+    <section class="Seccion4" id="sec4">
+
         <div class="contenedorFormularios">
             <h1 class="TituloSeccion4">Contacto</h1>
             <div class="formularioEmail">

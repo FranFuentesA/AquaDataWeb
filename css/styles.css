@@ -171,10 +171,98 @@ body {
 }
 
 /*-------------------- HEADER --------------------*/
+
+
+#idioma {
+    position: absolute;
+    right: 13%;
+    top: 7%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+
+    /* Se ocultará el botón de manera temporal */
+    display: none;
+}
+
+
+header{
+    position: relative;
+}
+
+#botonNavegacion {
+    position: absolute;
+    right: 5.25%;
+    top: 5.75%;
+    height: 10.25%;
+    width: auto;
+    /* Se ocultará el botón de manera temporal */
+    display: none;
+}
+
+.Portada{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/fotoCabecera.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 26em;
+}
+
+.contenedorLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#logo{
+    width: 15%;
+    height: auto;
+    padding-top: 1%;
+}
+
+
+
+.tituloHeader{
+    font-size: 0.5em;
+    color:  rgb(14, 179, 191);
+}
+
+.BotonDescenderHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 5%;
+    height: 5%;
+    width: 100%;
+}
+
+.BotonDescenderHeader a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.BotonDescenderHeader img {
+    width: 37%;
+}
+
 /*--------------------  BODY  --------------------*/
 .ContenedorSecciones {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*---------- SECCIÓN 1 ----------*/
@@ -194,6 +282,11 @@ body {
     color: #ffffff;
     text-align: center;
     font-size: 2.5em;
+}
+
+.Iconos{
+    width:30%;
+    height: auto;
 }
 
 .ContenedorCuadros {
@@ -567,7 +660,7 @@ body {
 
 /*---------- SECCIÓN 4 ----------*/
 .Seccion4 {
-    background: url(../img/foto_aquadata_recortada.jpg) no-repeat;
+    background: url(../img/foto_aquadata.jpg)  no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -578,12 +671,16 @@ body {
     justify-content: center;
 }
 
+#360fondo{
+    width: 100% ;
+    height: auto;
+}
+
 .TituloSeccion4 {
     font-size: 1.2em;
     font-weight: bold;
     padding-left: 6.5%;
     color: #ffffff;
-
 }
 
 .contenedorFormularios {
@@ -593,6 +690,12 @@ body {
     align-items: center;
     flex-basis: 100%;
     width: 100%;
+    padding: 5% 9% 5% 0;
+    background: url(../img/360@3x.png) no-repeat;
+    background-color: rgba(0,0,0,0.15);
+    background-size: 30%;
+    background-position: center;
+    height: 100%;
 }
 
 .etiqueta {
@@ -644,11 +747,11 @@ body {
     display: inline-block;
     cursor: pointer;
     color: #0EB3BF;
-    font-size: .84em;
+    font-size: .4em;
     padding: 5px 11.5em;
     text-decoration: none;
     text-shadow: 0 1px 100px #2f6627;
-    margin-left: 5%;
+    margin-left: 23%;
 }
 
 .btn:hover {
