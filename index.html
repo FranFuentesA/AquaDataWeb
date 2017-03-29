@@ -14,8 +14,9 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto-Black">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto-Bold">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8">
-
+    <!-- Efectos -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"
+            charset="utf-8">
     </script>
     <script src="/js/metodos.js" type="text/javascript" charset="utf-8">
 
@@ -25,80 +26,33 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 
     <script>
-        $(function(){
+        $(function () {
 
-        $('a[href*=#]').click(function() {
+            $('a[href*=#]').click(function () {
 
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-                && location.hostname == this.hostname) {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    && location.hostname == this.hostname) {
 
-                var $target = $(this.hash);
+                    var $target = $(this.hash);
 
-                $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
 
-                if ($target.length) {
+                    if ($target.length) {
 
-                    var targetOffset = $target.offset().top;
+                        var targetOffset = $target.offset().top;
 
-                    $('html,body').animate({scrollTop: targetOffset}, 1000);
+                        $('html,body').animate({scrollTop: targetOffset}, 1000);
 
-                    return false;
+                        return false;
+
+                    }
 
                 }
 
-            }
+            });
 
         });
-
-    });
     </script>
-    <script>
-        function efectoMail(y) {
-
-            var elemento = document.getElementById("emailEfecto");
-
-            if (y == 0) {
-                if (elemento.value.length == 0 ) {
-                        document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
-
-                } else {
-                        document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
-                }
-            }else if(y == 1){
-                document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
-
-            }else{
-                if (elemento.value.length == 0) {
-                    document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
-                } else {
-                    document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
-                }
-            }
-    }
-    </script>
-    <script>
-        function efectoAsunto(x) {
-
-            var elemento2 = document.getElementById("asuntoEfecto");
-
-            if (x == 0) {
-                if (elemento2.value.length == 0  ) {
-                    document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
-                } else {
-                    document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
-                }
-            }else if(x == 1){
-                document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
-            }else{
-                if (elemento2.value.length == 0) {
-                    document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
-                } else {
-                    document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
-                }
-            }
-        }
-    </script>
-
 
 </head>
 <body>
@@ -120,10 +74,9 @@
     </header>
 
     <section class="Seccion1" id="sec1">
-        <div id="parte1">
-            <h1 class="TituloSeccion1">¿AquaData?</h1>
-        </div>
+        <h1 class="TituloSeccion1">¿AquaData?</h1>
         <div class="ContenedorCuadros">
+
             <div class="Cuadro">
                 <img src="img/1.png" class="Iconos">
                 <div class="TituloCuadro">Nuestra visión</div>
@@ -242,8 +195,8 @@
                     <div class="iconosTienda">
                         <div class="iconoAndroid">
                         <img src="img/google.png" class="google">
-                        </div>
-                        <div  class="iconoIos">
+                    </div>
+                    <div class="iconoIos">
                         <img src="img/appstore.png" class="ios">
                         </div>
                     </div>
@@ -283,6 +236,7 @@
     </section>
 
 </section>
+
 <footer>
     <section class="ContactoRedesSociales">
         <a id="facebook" href="https://www.facebook.com/">
