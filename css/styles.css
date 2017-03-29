@@ -170,8 +170,56 @@ body {
     font-family: Roboto-Black, arial, sans-serif;
 }
 
-/*-------------------- HEADER --------------------*/
 
+
+.pulse{
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(0.95);
+        opacity: 0.7;
+    }
+    50% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0.95);
+        opacity: 0.7;
+    }
+
+}
+
+.sombreado {
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+/*-------------------- HEADER --------------------*/
 
 #idioma {
     position: absolute;
@@ -214,6 +262,15 @@ header{
     height: 26em;
 }
 
+#partePrimeraCabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+}
+
 .contenedorLogo {
     display: flex;
     flex-direction: column;
@@ -229,8 +286,6 @@ header{
     padding-top: 1%;
 }
 
-
-
 .tituloHeader{
     font-size: 0.5em;
     color:  rgb(14, 179, 191);
@@ -238,12 +293,12 @@ header{
 
 .BotonDescenderHeader {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    align-content: center;
-    margin-top: 5%;
-    height: 5%;
     width: 100%;
+    flex-grow: 1;
+    padding-bottom: 2%;
 }
 
 .BotonDescenderHeader a {
@@ -253,8 +308,8 @@ header{
     align-content: center;
 }
 
-.BotonDescenderHeader img {
-    width: 37%;
+.descender img {
+    width: 25%;
 }
 
 /*--------------------  BODY  --------------------*/
@@ -272,7 +327,7 @@ header{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 5% 0;
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -343,9 +398,8 @@ header{
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 5%;
-    height: 5%;
     width: 100%;
+    height: 5em;
 }
 
 .BotonDescender a {
@@ -353,10 +407,6 @@ header{
     justify-content: center;
     align-items: center;
     align-content: center;
-}
-
-.BotonDescender img {
-    width: 37%;
 }
 
 @media (max-width: 768px) {
@@ -467,11 +517,6 @@ header{
     justify-content: center;
     align-items: center;
     align-content: center;
-}
-
-.BotonDescender2 img {
-    width: 40%;
-    height: auto;
 }
 
 @media (max-width: 768px) {
@@ -626,11 +671,6 @@ header{
     justify-content: center;
     align-items: center;
     align-content: center;
-}
-
-.BotonDescender3 img {
-    width: 40%;
-    height: auto;
 }
 
 @media (max-width: 768px) {
