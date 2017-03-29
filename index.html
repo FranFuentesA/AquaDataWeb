@@ -18,6 +18,13 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"
             charset="utf-8">
     </script>
+    <script src="/js/metodos.js" type="text/javascript" charset="utf-8">
+
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
     <script>
         $(function () {
 
@@ -47,8 +54,6 @@
         });
     </script>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
 
@@ -211,7 +216,7 @@
                     <label>E-mail</label>
                 </div>
                 <div class="campoEmail">
-                     <textarea></textarea>
+                     <textarea id="emailEfecto" name="texto" onKeyDown="efectoMail(0)" onKeyUp="efectoMail(0)" onmouseover="efectoMail(1)" onmouseleave="efectoMail(2)"></textarea>
                 </div>
             </div>
 
@@ -220,15 +225,13 @@
                      <label>Asunto</label>
                 </div>
                 <div class="campoAsunto">
-                   <textarea rows="15"></textarea>
+                   <textarea id="asuntoEfecto" name="texto" onKeyDown="efectoAsunto(0)" onKeyUp="efectoAsunto(0)" onmouseover="efectoAsunto(1)" onmouseleave="efectoAsunto(2)" rows="15"></textarea>
+                    <div class="botonEnviar">
+                        <input type="button" class="btn" value="enviar">
+                    </div>
                 </div>
             </div>
-            <div class="botonEnviar">
 
-            </div>
-            <div class="botonEnviar">
-            <input type="button" class="btn" value="enviar">
-            </div>
         </div>
     </section>
 
