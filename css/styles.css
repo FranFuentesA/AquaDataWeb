@@ -172,7 +172,6 @@ body {
 
 /*-------------------- HEADER --------------------*/
 
-
 #idioma {
     position: absolute;
     right: 13%;
@@ -185,8 +184,7 @@ body {
     display: none;
 }
 
-
-header{
+header {
     position: relative;
 }
 
@@ -200,7 +198,7 @@ header{
     display: none;
 }
 
-.Portada{
+.Portada {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -223,17 +221,15 @@ header{
     background-color: #ffffff;
 }
 
-#logo{
+#logo {
     width: 15%;
     height: auto;
     padding-top: 1%;
 }
 
-
-
-.tituloHeader{
+.tituloHeader {
     font-size: 0.5em;
-    color:  rgb(14, 179, 191);
+    color: rgb(14, 179, 191);
 }
 
 .BotonDescenderHeader {
@@ -284,8 +280,8 @@ header{
     font-size: 2.5em;
 }
 
-.Iconos{
-    width:30%;
+.Iconos {
+    width: 30%;
     height: auto;
 }
 
@@ -485,7 +481,7 @@ header{
         flex-flow: column nowrap;
     }
 
-    .CuadroSec2{
+    .CuadroSec2 {
         height: 500px;
     }
 
@@ -499,7 +495,6 @@ header{
         font-size: 2em;
 
     }
-
 
 }
 
@@ -660,7 +655,7 @@ header{
 
 /*---------- SECCIÓN 4 ----------*/
 .Seccion4 {
-    background: url(../img/foto_aquadata.jpg)  no-repeat;
+    background: url(../img/foto_aquadata.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -671,8 +666,8 @@ header{
     justify-content: center;
 }
 
-#360fondo{
-    width: 100% ;
+#360fondo {
+    width: 100%;
     height: auto;
 }
 
@@ -692,7 +687,7 @@ header{
     width: 100%;
     padding: 5% 9% 5% 0;
     background: url(../img/360@3x.png) no-repeat;
-    background-color: rgba(0,0,0,0.15);
+    background-color: rgba(0, 0, 0, 0.15);
     background-size: 30%;
     background-position: center;
     height: 100%;
@@ -714,7 +709,7 @@ header{
 }
 
 .campoAsunto, .campoEmail {
-    flex-basis:90%;
+    flex-basis: 90%;
     width: 90%;
 }
 
