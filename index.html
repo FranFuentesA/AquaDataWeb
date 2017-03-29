@@ -15,6 +15,10 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto-Bold">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8">
+
+    </script>
+    <script src="/js/metodos.js" type="text/javascript" charset="utf-8">
+
     </script>
 
     <!-- Custom CSS -->
@@ -48,6 +52,53 @@
 
     });
     </script>
+    <script>
+        function efectoMail(y) {
+
+            var elemento = document.getElementById("emailEfecto");
+
+            if (y == 0) {
+                if (elemento.value.length == 0 ) {
+                        document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
+
+                } else {
+                        document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
+                }
+            }else if(y == 1){
+                document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
+
+            }else{
+                if (elemento.value.length == 0) {
+                    document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
+                } else {
+                    document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
+                }
+            }
+    }
+    </script>
+    <script>
+        function efectoAsunto(x) {
+
+            var elemento2 = document.getElementById("asuntoEfecto");
+
+            if (x == 0) {
+                if (elemento2.value.length == 0  ) {
+                    document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
+                } else {
+                    document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
+                }
+            }else if(x == 1){
+                document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
+            }else{
+                if (elemento2.value.length == 0) {
+                    document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
+                } else {
+                    document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
+                }
+            }
+        }
+    </script>
+
 
 </head>
 <body>
@@ -212,7 +263,7 @@
                     <label>E-mail</label>
                 </div>
                 <div class="campoEmail">
-                     <textarea></textarea>
+                     <textarea id="emailEfecto" name="texto" onKeyDown="efectoMail(0)" onKeyUp="efectoMail(0)" onmouseover="efectoMail(1)" onmouseleave="efectoMail(2)"></textarea>
                 </div>
             </div>
 
@@ -221,15 +272,13 @@
                      <label>Asunto</label>
                 </div>
                 <div class="campoAsunto">
-                   <textarea rows="15"></textarea>
+                   <textarea id="asuntoEfecto" name="texto" onKeyDown="efectoAsunto(0)" onKeyUp="efectoAsunto(0)" onmouseover="efectoAsunto(1)" onmouseleave="efectoAsunto(2)" rows="15"></textarea>
+                    <div class="botonEnviar">
+                        <input type="button" class="btn" value="enviar">
+                    </div>
                 </div>
             </div>
-            <div class="botonEnviar">
 
-            </div>
-            <div class="botonEnviar">
-            <input type="button" class="btn" value="enviar">
-            </div>
         </div>
     </section>
 

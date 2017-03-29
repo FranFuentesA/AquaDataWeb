@@ -151,6 +151,8 @@
         font-size: 7px;
     }
 }
+/**/
+
 
 /*-------------------- ESTILOS GLOBALES --------------------*/
 *, *:before, *:after {
@@ -179,7 +181,7 @@ body {
     animation-duration: 1.5s;
     -webkit-animation-duration: 1.5s;
 
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2500;
     -webkit-animation-iteration-count: infinite;
 }
 
@@ -218,6 +220,8 @@ body {
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em
 }
+
+
 
 /*-------------------- HEADER --------------------*/
 
@@ -326,7 +330,7 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-top: 5%;
+    padding-top: 4.4%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -475,6 +479,7 @@ header {
     min-width: 30%;
     margin: 0.3%;
     padding: 0 1% 0 1%;
+    height: 10em;
 }
 
 .CuadroSec2 div {
@@ -508,7 +513,7 @@ header {
 
 .IconosSeccion2 {
     width: auto;
-    height: 15%;
+    height: 20%;
 }
 
 .BotonDescender2 a {
@@ -703,7 +708,6 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 5% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -717,7 +721,7 @@ header {
 .TituloSeccion4 {
     font-size: 1.2em;
     font-weight: bold;
-    padding-left: 6.5%;
+    padding-left: 5%;
     color: #ffffff;
 }
 
@@ -728,9 +732,9 @@ header {
     align-items: center;
     flex-basis: 100%;
     width: 100%;
-    padding: 5% 9% 5% 0;
+    padding: 5% 5% 5% 0;
     background: url(../img/360@3x.png) no-repeat;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.25);
     background-size: 30%;
     background-position: center;
     height: 100%;
@@ -754,6 +758,8 @@ header {
 .campoAsunto, .campoEmail {
     flex-basis: 90%;
     width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 .campoAsunto textarea, .campoEmail textarea {
@@ -772,6 +778,10 @@ header {
     color: white;
 }
 
+.campoAsunto:hover textarea, .campoEmail:hover textarea{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 #asunto {
     height: 200px;
     width: auto;
@@ -785,11 +795,14 @@ header {
     display: inline-block;
     cursor: pointer;
     color: #0EB3BF;
-    font-size: .4em;
-    padding: 5px 11.5em;
+    font-size: 1em;
+    width: 100%;
     text-decoration: none;
     text-shadow: 0 1px 100px #2f6627;
-    margin-left: 23%;
+}
+
+.botonEnviar {
+    margin-top: 10%;
 }
 
 .btn:hover {
