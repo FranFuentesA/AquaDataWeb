@@ -233,8 +233,7 @@ body {
     display: none;
 }
 
-
-header{
+header {
     position: relative;
 }
 
@@ -248,7 +247,7 @@ header{
     display: none;
 }
 
-.Portada{
+.Portada {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -280,15 +279,15 @@ header{
     background-color: #ffffff;
 }
 
-#logo{
+#logo {
     width: 15%;
     height: auto;
     padding-top: 1%;
 }
 
-.tituloHeader{
+.tituloHeader {
     font-size: 0.5em;
-    color:  rgb(14, 179, 191);
+    color: rgb(14, 179, 191);
 }
 
 .BotonDescenderHeader {
@@ -530,7 +529,7 @@ header{
         flex-flow: column nowrap;
     }
 
-    .CuadroSec2{
+    .CuadroSec2 {
         height: 500px;
     }
 
@@ -544,7 +543,6 @@ header{
         font-size: 2em;
 
     }
-
 
 }
 
@@ -700,25 +698,26 @@ header{
 
 /*---------- SECCIÓN 4 ----------*/
 .Seccion4 {
-    background: url(../img/foto_aquadata.jpg)  no-repeat;
+    background: url(../img/foto_aquadata.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding: 5% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#360fondo{
-    width: 100% ;
+#360fondo {
+    width: 100%;
     height: auto;
 }
 
 .TituloSeccion4 {
     font-size: 1.2em;
     font-weight: bold;
-    padding-left: 10%;
+    padding-left: 6.5%;
     color: #ffffff;
 }
 
@@ -727,9 +726,11 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-basis: 100%;
+    width: 100%;
     padding: 5% 9% 5% 0;
     background: url(../img/360@3x.png) no-repeat;
-    background-color: rgba(0,0,0,0.15);
+    background-color: rgba(0, 0, 0, 0.15);
     background-size: 30%;
     background-position: center;
     height: 100%;
@@ -738,15 +739,26 @@ header{
 .etiqueta {
     color: #ffffff;
     font-size: 0.6em;
+    flex-basis: 10%;
+    width: 10%;
 }
 
 .formularioAsunto, .formularioEmail {
     display: flex;
     flex-direction: row;
     margin-bottom: 2.5%;
+    flex-basis: 50%;
+    width: 50%;
+}
+
+.campoAsunto, .campoEmail {
+    flex-basis: 90%;
+    width: 90%;
 }
 
 .campoAsunto textarea, .campoEmail textarea {
+    flex-basis: 100%;
+    width: 100%;
     background-color: transparent;
     border: 1px solid #ffffff;
     scrollbar-arrow-color: #000066;
@@ -755,9 +767,9 @@ header{
     scrollbar-face-color: #cc9933;
     scrollbar-shadow-color: #DDDDDD;
     scrollbar-highlight-color: #CCCCCC;
-    font-size: .4em;
-    margin-left: 15%;
     resize: none;
+    font-size: .7em;
+    color: white;
 }
 
 #asunto {
