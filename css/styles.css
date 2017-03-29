@@ -567,7 +567,7 @@ body {
 
 /*---------- SECCIÓN 4 ----------*/
 .Seccion4 {
-    background: url(../img/foto_aquadata.jpg) no-repeat;
+    background: url(../img/foto_aquadata_recortada.jpg) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -591,20 +591,33 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-basis: 100%;
+    width: 100%;
 }
 
 .etiqueta {
     color: #ffffff;
     font-size: 0.6em;
+    flex-basis: 10%;
+    width: 10%;
 }
 
 .formularioAsunto, .formularioEmail {
     display: flex;
     flex-direction: row;
     margin-bottom: 2.5%;
+    flex-basis: 50%;
+    width: 50%;
+}
+
+.campoAsunto, .campoEmail {
+    flex-basis:90%;
+    width: 90%;
 }
 
 .campoAsunto textarea, .campoEmail textarea {
+    flex-basis: 100%;
+    width: 100%;
     background-color: transparent;
     border: 1px solid #ffffff;
     scrollbar-arrow-color: #000066;
@@ -613,9 +626,9 @@ body {
     scrollbar-face-color: #cc9933;
     scrollbar-shadow-color: #DDDDDD;
     scrollbar-highlight-color: #CCCCCC;
-    font-size: .4em;
-    margin-left: 15%;
     resize: none;
+    font-size: .7em;
+    color: white;
 }
 
 #asunto {
@@ -631,11 +644,11 @@ body {
     display: inline-block;
     cursor: pointer;
     color: #0EB3BF;
-    font-size: .4em;
+    font-size: .84em;
     padding: 5px 11.5em;
     text-decoration: none;
     text-shadow: 0 1px 100px #2f6627;
-    margin-left: 23%;
+    margin-left: 5%;
 }
 
 .btn:hover {
