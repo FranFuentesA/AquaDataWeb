@@ -18,41 +18,15 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"
             charset="utf-8">
     </script>
-    <script src="/js/metodos.js" type="text/javascript" charset="utf-8">
-
+    <script src="js/metodos.js" type="text/javascript" charset="utf-8">
     </script>
+
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 
-    <script>
-        $(function () {
 
-            $('a[href*=#]').click(function () {
-
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                    && location.hostname == this.hostname) {
-
-                    var $target = $(this.hash);
-
-                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
-
-                    if ($target.length) {
-
-                        var targetOffset = $target.offset().top;
-
-                        $('html,body').animate({scrollTop: targetOffset}, 1000);
-
-                        return false;
-
-                    }
-
-                }
-
-            });
-
-        });
-    </script>
 
 </head>
 <body>
@@ -216,7 +190,7 @@
                     <label>E-mail</label>
                 </div>
                 <div class="campoEmail">
-                     <textarea id="emailEfecto" name="texto" onKeyDown="efectoMail(0)" onKeyUp="efectoMail(0)" onmouseover="efectoMail(1)" onmouseleave="efectoMail(2)"></textarea>
+                     <textarea id="emailEfecto" name="texto" onKeyDown="efectoMail(0)" onKeyUp="efectoMail(0)" onmouseover="efectoMail(1)" onmouseleave="efectoMail(2)" cols="1"></textarea>
                 </div>
             </div>
 

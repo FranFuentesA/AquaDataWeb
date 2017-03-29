@@ -277,6 +277,7 @@ header {
     width: auto;
     /* Se ocultará el botón de manera temporal */
     display: none;
+
 }
 
 .Portada {
@@ -290,7 +291,7 @@ header {
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    height: 26em;
+    height: 100vh
 }
 
 #partePrimeraCabecera{
@@ -481,6 +482,11 @@ header {
 }
 
 /*---------- SECCIÓN 2 ----------*/
+
+.seccion2{
+    height: 100vh;
+}
+
 .TituloCuadro2 {
     display: flex;
     justify-content: center;
@@ -580,6 +586,11 @@ header {
 }
 
 /*---------- SECCIÓN 3 ----------*/
+
+.seccion3{
+    height: 100vh;
+}
+
 .tituloSeccion3 {
     margin: 8% 0 5% 0;
     color: #74C6D1;
@@ -730,6 +741,11 @@ header {
 }
 
 /*---------- SECCIÓN 4 ----------*/
+
+#sec4{
+    height: 100vh;
+}
+
 .Seccion4 {
     background: url(../img/foto_aquadata.jpg) no-repeat;
     -webkit-background-size: cover;

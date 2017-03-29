@@ -24,7 +24,7 @@ $(function(){
 
     });
 
-})
+});
 
 
 function efectoMail(y) {
@@ -71,5 +71,6 @@ function efectoAsunto(x) {
         }
     }
 }
+
 
 
