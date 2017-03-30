@@ -10,7 +10,7 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto-MediumItalic">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto-Medium-Italic">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto-Black">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto-Bold">
 
@@ -90,33 +90,37 @@
         <div class="tituloSeccion2" id="sec2">utilidad versátil de <span>nuestras soluciones</span></div>
         <div class="ContenedorCuadros2">
 
-            <div class="CuadroSec2" id="CuadroIzquierda">
+            <div class="CuadroSec2" id="iconPescaDeportiva" onclick="location.href='http://www.google.com';"
+                 style="cursor:pointer;">
+
                 <img src="img/pesca_deportiva@3x.png" class="IconosSeccion2">
                 <div class="TituloCuadro2" >Pesca Deportiva</div>
             </div>
 
-            <div class="CuadroSec2" id="fondoColor">
+            <div class="CuadroSec2" id="iconoDepuracion">
                 <img src="img/depuracion@3x.png" class="IconosSeccion2">
                 <div class="TituloCuadro2" >Depuración</div>
             </div>
 
-            <div class="CuadroSec2" id="cuadroDerecha">
+            <div class="CuadroSec2" id="cuadroAgricultura">
                 <img src="img/africultura@3x.png" class="IconosSeccion2">
                 <div class="TituloCuadro2">Agricultura y regadía</div>
 
             </div>
 
-            <div class="CuadroSec2" id="fondoColor2">
+            <div class="CuadroSec2" id="fondoOcioGeneral" onclick="location.href='http://www.google.com';"
+                 style="cursor:pointer;">
+
                 <img src="img/ocio@3x.png" class="IconosSeccion2">
                 <div class="TituloCuadro2" >Ocio General</div>
             </div>
 
-            <div class="CuadroSec2" id="CuadroCentral2">
+            <div class="CuadroSec2" id="iconoSalud">
                 <img src="img/salud@3x.png" class="IconosSeccion2">
                 <div class="TituloCuadro2">Salud</div>
             </div>
 
-            <div class="CuadroSec2" id="fondoColor3">
+            <div class="CuadroSec2" id="iconoIdentificacion">
                 <img src="img/obstaculos@3x.png" class="IconosSeccion2">
                 <div class="TituloCuadro2" >Identificación de obstáculos</div>
             </div>
@@ -191,7 +195,7 @@
                 </div>
                 <div class="campoEmail">
                     <textarea id="emailEfecto" name="texto" onKeyDown="efectoMail(0)" onKeyUp="efectoMail(0)"
-                              onmouseover="efectoMail(1)" onmouseleave="efectoMail(2)" rows="1" maxlength="50" ></textarea>
+                              onmouseover="efectoMail(1)" onmouseleave="efectoMail(2)" rows="1" maxlength="600" ></textarea>
                 </div>
             </div>
 
@@ -201,9 +205,9 @@
                 </div>
                 <div class="campoAsunto">
                     <textarea id="asuntoEfecto" name="texto" onKeyDown="efectoAsunto(0)" onKeyUp="efectoAsunto(0)"
-                              onmouseover="efectoAsunto(1)" onmouseleave="efectoAsunto(2)" rows="15" maxlength="2000"></textarea>
+                              onmouseover="efectoAsunto(1)" onmouseleave="efectoAsunto(2)" rows="15" maxlength="500"></textarea>
                     <div class="botonEnviar">
-                        <input type="button" class="btn" value="enviar">
+                        <input type="submit" class="btn" value="enviar">
                     </div>
                 </div>
             </div>
