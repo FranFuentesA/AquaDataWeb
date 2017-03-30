@@ -394,10 +394,10 @@
 body {
     box-sizing: border-box;
     margin: 0 auto;
-    font-family: Roboto-Black, arial, sans-serif;
+    font-family: Roboto, arial, sans-serif;
 }
 
-.Pulse{
+.Pulse {
     animation-name: pulse;
     -webkit-animation-name: pulse;
 
@@ -485,7 +485,7 @@ header {
     height: 100vh
 }
 
-#partePrimeraCabecera{
+#partePrimeraCabecera {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -546,13 +546,13 @@ header {
     }
 }
 
-@media (orientation: landscape) and (max-width: 768px){
+@media (orientation: landscape) and (max-width: 768px) {
     .BotonDescenderHeader a {
         display: none;
     }
 }
 
-@media (orientation: portrait) and (max-height: 768px){
+@media (orientation: portrait) and (max-height: 768px) {
     .BotonDescenderHeader a {
         display: none;
     }
@@ -579,9 +579,8 @@ header {
     font-size: 2.5em;
 }
 
-.Iconos{
-    width:30%;
-    height: auto;
+.Iconos {
+    width: 22.5%;
 }
 
 .ContenedorCuadros {
@@ -595,12 +594,12 @@ header {
     flex-flow: column;
     align-items: center;
     border-width: thin;
-    border-color: #ffffff;
+    border-color: #fff;
     border-style: solid;
     color: #fff;
     flex-basis: 20%;
     width: 20%;
-    padding: 3% 1%;
+    padding: 3% 1.5%;
 }
 
 .TituloCuadro {
@@ -610,9 +609,9 @@ header {
 }
 
 .TextoCuadro {
-    font-family: Roboto-Black, arial, sans-serif;
     text-align: left;
     font-size: 0.6em;
+    line-height: 1.7em;
 }
 
 .TextoCuadro span {
@@ -622,6 +621,7 @@ header {
 .ListaCuadro {
     align-self: flex-start;
     margin-top: 1%;
+    line-height: 1.7em;
     font-size: 0.6em;
 }
 
@@ -638,6 +638,7 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
+    flex-basis: 100%;
     width: 100%;
     height: 5em;
 }
@@ -647,9 +648,21 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
+    flex-basis: 50%;
+}
+
+.BotonDescender img {
+    width: 7%;
 }
 
 @media (max-width: 768px) {
+    .TituloSeccion1 {
+        font-size: 4.9em;
+    }
+
+    .Iconos {
+        width: 25%;
+    }
 
     .ContenedorCuadros {
         display: flex;
@@ -659,21 +672,23 @@ header {
     }
 
     .Cuadro {
-        flex-basis: 40%;
-        width: 40%;
+        flex-basis: 50%;
+        width: 50%;
+        padding: 10% 3%;
     }
 
     .TituloCuadro {
-        margin: 10% 0;
-        font-size: 1.5em;
+        margin: 5% 0;
+        font-size: 2.2em;
     }
 
     .TextoCuadro {
-        font-size: 1.1em;
+        font-size: 1.12em;
     }
 
     #CuadroCentral {
         margin: 5% 0;
+        padding: 10% 3% 15% 3%;
     }
 
     .ListaCuadro {
@@ -687,10 +702,43 @@ header {
     .seccion1Moviles {
         margin-bottom: 5%;
     }
+
+    .BotonDescender a {
+        display: none;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 768px) {
+    .TituloSeccion1 {
+        font-size: 2.7em;
+    }
+
+    .Cuadro {
+        flex-basis: 70%;
+        width: 70%;
+        padding: 15% 5%;
+    }
+
+    .TituloCuadro {
+        font-size: 1.8em;
+    }
+
+    .TextoCuadro {
+        font-size: 1em;
+    }
+
+    #CuadroCentral {
+        margin: 5% 0;
+        padding: 15% 3% 25% 3%;
+    }
+
+    .ListaCuadro {
+        font-size: 1em;
+    }
 }
 
 /*---------- SECCIÓN 2 ----------*/
-.seccion2{
+.seccion2 {
     height: 100vh;
 }
 
@@ -730,8 +778,8 @@ header {
 }
 
 #fondoColor, #fondoColor2, #fondoColor3 {
-     background-color: #74C6D1;
- }
+    background-color: #74C6D1;
+}
 
 .BotonDescender2 {
     display: flex;
@@ -797,7 +845,7 @@ header {
 }
 
 /*---------- SECCIÓN 3 ----------*/
-.seccion3{
+.seccion3 {
     height: 100vh;
 }
 
@@ -951,7 +999,7 @@ header {
 }
 
 /*---------- SECCIÓN 4 ----------*/
-#sec4{
+#sec4 {
     height: 100vh;
 }
 
@@ -1014,7 +1062,7 @@ header {
     flex-direction: column;
 }
 
-.campoEmail{
+.campoEmail {
     overflow: hidden;
 }
 
@@ -1036,11 +1084,11 @@ header {
     white-space: pre-wrap;
 }
 
-.campoAsunto:hover textarea, .campoEmail:hover textarea{
+.campoAsunto:hover textarea, .campoEmail:hover textarea {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#fondoColor, #fondoColor2, #fondoColor3{
+#fondoColor, #fondoColor2, #fondoColor3 {
     border: none;
     position: relative;
     box-sizing: border-box;
@@ -1048,7 +1096,7 @@ header {
     transform-style: preserve-3d;
 }
 
-#CuadroCentral2, #CuadroIzquierda, #cuadroDerecha{
+#CuadroCentral2, #CuadroIzquierda, #cuadroDerecha {
     border: none;
     position: relative;
     box-sizing: border-box;
@@ -1056,7 +1104,7 @@ header {
     transform-style: preserve-3d;
 }
 
-#fondoColor:after, #fondoColor2:after, #fondoColor3:after{
+#fondoColor:after, #fondoColor2:after, #fondoColor3:after {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1073,7 +1121,7 @@ header {
     transform: rotateX(90deg);
 }
 
-#CuadroCentral2:after, #CuadroIzquierda:after, #cuadroDerecha:after{
+#CuadroCentral2:after, #CuadroIzquierda:after, #cuadroDerecha:after {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1092,7 +1140,7 @@ header {
     transform: rotateX(90deg);
 }
 
-.CuadroSec2:hover{
+.CuadroSec2:hover {
     transform-origin: center bottom;
     transform: rotateX(-90deg) translateY(100%);
 }
@@ -1130,7 +1178,7 @@ header {
 }
 
 @media (max-width: 768px) {
-    .BotonDescender, .BotonDescender2 img, .BotonDescender3 img {
+    .BotonDescender2 img, .BotonDescender3 img {
         display: none;
     }
 }
