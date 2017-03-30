@@ -397,7 +397,7 @@ body {
     font-family: Roboto-Black, arial, sans-serif;
 }
 
-.pulse{
+.Pulse{
     animation-name: pulse;
     -webkit-animation-name: pulse;
 
@@ -494,7 +494,7 @@ header {
     flex-grow: 1;
 }
 
-.contenedorLogo {
+.ContenedorLogo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -506,10 +506,9 @@ header {
 
 #logo {
     height: 50%;
-    padding-top: 1%;
 }
 
-.tituloHeader {
+.TituloHeader {
     font-size: .65em;
     color: rgb(14, 179, 191);
 }
@@ -533,17 +532,29 @@ header {
     width: 50%;
 }
 
-.descender img {
+.Descender img {
     width: 7.5%;
 }
 
 @media (orientation: portrait) {
-    .tituloHeader {
+    .TituloHeader {
         font-size: 1em;
     }
 
-    .descender img {
+    .Descender img {
         width: 25%;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 768px){
+    .BotonDescenderHeader a {
+        display: none;
+    }
+}
+
+@media (orientation: portrait) and (max-height: 768px){
+    .BotonDescenderHeader a {
+        display: none;
     }
 }
 
@@ -679,7 +690,6 @@ header {
 }
 
 /*---------- SECCIÓN 2 ----------*/
-
 .seccion2{
     height: 100vh;
 }
@@ -787,7 +797,6 @@ header {
 }
 
 /*---------- SECCIÓN 3 ----------*/
-
 .seccion3{
     height: 100vh;
 }
@@ -942,7 +951,6 @@ header {
 }
 
 /*---------- SECCIÓN 4 ----------*/
-
 #sec4{
     height: 100vh;
 }
@@ -1083,8 +1091,6 @@ header {
     transform-origin: left bottom;
     transform: rotateX(90deg);
 }
-
-
 
 .CuadroSec2:hover{
     transform-origin: center bottom;
