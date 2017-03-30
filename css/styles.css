@@ -1,200 +1,392 @@
-@charset "UTF-8";
+/*-------------------- ESTILOS GLOBALES --------------------*/
 
-/*-------------------- Gradilla de letra responsive --------------------*/
-@media (min-width: 7681px) {
+/*---------- Gradilla de letra responsive ----------*/
+
+/*----- Orientación horizontal -----*/
+@media (orientation: landscape) and (min-width: 7681px) {
     body {
         font-size: 114px;
     }
 }
-@media (max-width: 7680px) {
+@media (orientation: landscape) and (max-width: 7680px) {
     body {
         font-size: 104px;
     }
 }
-@media (max-width: 7131px) {
+@media (orientation: landscape) and (max-width: 7131px) {
     body {
         font-size: 99px;
     }
 }
-@media (max-width: 6582px) {
+@media (orientation: landscape) and (max-width: 6582px) {
     body {
         font-size: 94px;
     }
 }
-@media (max-width: 6034px) {
+@media (orientation: landscape) and (max-width: 6034px) {
     body {
         font-size: 89px;
     }
 }
-@media (max-width: 5485px) {
+@media (orientation: landscape) and (max-width: 5485px) {
     body {
         font-size: 84px;
     }
 }
-@media (max-width: 4937px) {
+@media (orientation: landscape) and (max-width: 4937px) {
     body {
         font-size: 79px;
     }
 }
-@media (max-width: 4388px) {
+@media (orientation: landscape) and (max-width: 4388px) {
     body {
         font-size: 74px;
     }
 }
-@media (max-width: 3840px) {
+@media (orientation: landscape) and (max-width: 3840px) {
     body {
         font-size: 69px;
     }
 }
-@media (max-width: 3584px) {
+@media (orientation: landscape) and (max-width: 3584px) {
     body {
         font-size: 64px;
     }
 }
-@media (max-width: 3328px) {
+@media (orientation: landscape) and (max-width: 3328px) {
     body {
         font-size: 59px;
     }
 }
-@media (max-width: 3072px) {
+@media (orientation: landscape) and (max-width: 3072px) {
     body {
         font-size: 54px;
     }
 }
-@media (max-width: 2816px) {
+@media (orientation: landscape) and (max-width: 2816px) {
     body {
         font-size: 49px;
     }
 }
-@media (max-width: 2560px) {
+@media (orientation: landscape) and (max-width: 2560px) {
     body {
         font-size: 44px;
     }
 }
-@media (max-width: 2432px) {
+@media (orientation: landscape) and (max-width: 2432px) {
     body {
         font-size: 42px;
     }
 }
-@media (max-width: 2304px) {
+@media (orientation: landscape) and (max-width: 2304px) {
     body {
         font-size: 40px;
     }
 }
-@media (max-width: 2176px) {
+@media (orientation: landscape) and (max-width: 2176px) {
     body {
         font-size: 38px;
     }
 }
-@media (max-width: 2048px) {
+@media (orientation: landscape) and (max-width: 2048px) {
     body {
         font-size: 36px;
     }
 }
-@media (max-width: 1920px) {
+@media (orientation: landscape) and (max-width: 1920px) {
     body {
         font-size: 34px;
     }
 }
-@media (max-width: 1792px) {
+@media (orientation: landscape) and (max-width: 1792px) {
     body {
         font-size: 32px;
     }
 }
-@media (max-width: 1664px) {
+@media (orientation: landscape) and (max-width: 1664px) {
     body {
         font-size: 30px;
     }
 }
-@media (max-width: 1536px) {
+@media (orientation: landscape) and (max-width: 1536px) {
     body {
         font-size: 28px;
     }
 }
-@media (max-width: 1408px) {
+@media (orientation: landscape) and (max-width: 1408px) {
     body {
         font-size: 26px;
     }
 }
-@media (max-width: 1280px) {
+@media (orientation: landscape) and (max-width: 1280px) {
     body {
         font-size: 24px;
     }
 }
-@media (max-width: 1152px) {
+@media (orientation: landscape) and (max-width: 1152px) {
     body {
         font-size: 22px;
     }
 }
-@media (max-width: 1024px) {
+@media (orientation: landscape) and (max-width: 1024px) {
     body {
         font-size: 20px;
     }
 }
-@media (max-width: 896px) {
+@media (orientation: landscape) and (max-width: 896px) {
     body {
         font-size: 18px;
     }
 }
-@media (max-width: 768px) {
+@media (orientation: landscape) and (max-width: 768px) {
     body {
         font-size: 16px;
     }
 }
-@media (max-width: 640px) {
+@media (orientation: landscape) and (max-width: 640px) {
     body {
         font-size: 14px;
     }
 }
-@media (max-width: 608px) {
+@media (orientation: landscape) and (max-width: 608px) {
     body {
         font-size: 13px;
     }
 }
-@media (max-width: 576px) {
+@media (orientation: landscape) and (max-width: 576px) {
     body {
         font-size: 12px;
     }
 }
-@media (max-width: 480px) {
+@media (orientation: landscape) and (max-width: 480px) {
     body {
         font-size: 11px;
     }
 }
-@media (max-width: 470px) {
+@media (orientation: landscape) and (max-width: 470px) {
     body {
         font-size: 10px;
     }
 }
-@media (max-width: 460px) {
+@media (orientation: landscape) and (max-width: 460px) {
     body {
         font-size: 9px;
     }
 }
-@media (max-width: 426px) {
+@media (orientation: landscape) and (max-width: 426px) {
     body {
         font-size: 8px;
     }
 }
-@media (max-width: 392px) {
+@media (orientation: landscape) and (max-width: 392px) {
     body {
         font-size: 7px;
     }
 }
-@media (max-width: 358px) {
+@media (orientation: landscape) and (max-width: 358px) {
     body {
         font-size: 6px;
     }
 }
-@media (max-width: 256px) {
+@media (orientation: landscape) and (max-width: 256px) {
     body {
         font-size: 5px;
     }
 }
-/**/
 
+/*----- Orientación vertical -----*/
+@media (orientation: portrait) and (max-height: 7681px) {
+    body {
+        font-size: 114px;
+    }
+}
+@media (orientation: portrait) and (max-height: 7680px) {
+    body {
+        font-size: 104px;
+    }
+}
+@media (orientation: portrait) and (max-height: 7131px) {
+    body {
+        font-size: 99px;
+    }
+}
+@media (orientation: portrait) and (max-height: 6582px) {
+    body {
+        font-size: 94px;
+    }
+}
+@media (orientation: portrait) and (max-height: 6034px) {
+    body {
+        font-size: 89px;
+    }
+}
+@media (orientation: portrait) and (max-height: 5485px) {
+    body {
+        font-size: 84px;
+    }
+}
+@media (orientation: portrait) and (max-height: 4937px) {
+    body {
+        font-size: 79px;
+    }
+}
+@media (orientation: portrait) and (max-height: 4388px) {
+    body {
+        font-size: 74px;
+    }
+}
+@media (orientation: portrait) and (max-height: 3840px) {
+    body {
+        font-size: 69px;
+    }
+}
+@media (orientation: portrait) and (max-height: 3584px) {
+    body {
+        font-size: 64px;
+    }
+}
+@media (orientation: portrait) and (max-height: 3328px) {
+    body {
+        font-size: 59px;
+    }
+}
+@media (orientation: portrait) and (max-height: 3072px) {
+    body {
+        font-size: 54px;
+    }
+}
+@media (orientation: portrait) and (max-height: 2816px) {
+    body {
+        font-size: 49px;
+    }
+}
+@media (orientation: portrait) and (max-height: 2560px) {
+    body {
+        font-size: 44px;
+    }
+}
+@media (orientation: portrait) and (max-height: 2432px) {
+    body {
+        font-size: 42px;
+    }
+}
+@media (orientation: portrait) and (max-height: 2304px) {
+    body {
+        font-size: 40px;
+    }
+}
+@media (orientation: portrait) and (max-height: 2176px) {
+    body {
+        font-size: 38px;
+    }
+}
+@media (orientation: portrait) and (max-height: 2048px) {
+    body {
+        font-size: 36px;
+    }
+}
+@media (orientation: portrait) and (max-height: 1920px) {
+    body {
+        font-size: 34px;
+    }
+}
+@media (orientation: portrait) and (max-height: 1792px) {
+    body {
+        font-size: 32px;
+    }
+}
+@media (orientation: portrait) and (max-height: 1664px) {
+    body {
+        font-size: 30px;
+    }
+}
+@media (orientation: portrait) and (max-height: 1536px) {
+    body {
+        font-size: 28px;
+    }
+}
+@media (orientation: portrait) and (max-height: 1408px) {
+    body {
+        font-size: 26px;
+    }
+}
+@media (orientation: portrait) and (max-height: 1280px) {
+    body {
+        font-size: 24px;
+    }
+}
+@media (orientation: portrait) and (max-height: 1152px) {
+    body {
+        font-size: 22px;
+    }
+}
+@media (orientation: portrait) and (max-height: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+@media (orientation: portrait) and (max-height: 896px) {
+    body {
+        font-size: 18px;
+    }
+}
+@media (orientation: portrait) and (max-height: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+@media (orientation: portrait) and (max-height: 640px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media (orientation: portrait) and (max-height: 608px) {
+    body {
+        font-size: 13px;
+    }
+}
+@media (orientation: portrait) and (max-height: 576px) {
+    body {
+        font-size: 12px;
+    }
+}
+@media (orientation: portrait) and (max-height: 480px) {
+    body {
+        font-size: 11px;
+    }
+}
+@media (orientation: portrait) and (max-height: 470px) {
+    body {
+        font-size: 10px;
+    }
+}
+@media (orientation: portrait) and (max-height: 460px) {
+    body {
+        font-size: 9px;
+    }
+}
+@media (orientation: portrait) and (max-height: 426px) {
+    body {
+        font-size: 8px;
+    }
+}
+@media (orientation: portrait) and (max-height: 392px) {
+    body {
+        font-size: 7px;
+    }
+}
+@media (orientation: portrait) and (max-height: 358px) {
+    body {
+        font-size: 6px;
+    }
+}
+@media (orientation: portrait) and (max-height: 256px) {
+    body {
+        font-size: 5px;
+    }
+}
 
-/*-------------------- ESTILOS GLOBALES --------------------*/
+/*---------- Los demás =D ----------*/
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -250,9 +442,11 @@ body {
     }
 }
 
-
-
 /*-------------------- HEADER --------------------*/
+header {
+    position: relative;
+}
+
 #idioma {
     position: absolute;
     right: 13%;
@@ -263,10 +457,6 @@ body {
 
     /* Se ocultará el botón de manera temporal */
     display: none;
-}
-
-header {
-    position: relative;
 }
 
 #botonNavegacion {
@@ -286,7 +476,7 @@ header {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    background: url(../img/fotoCabecera.jpg) no-repeat;
+    background: url(../img/fotoCabecera.jpg) center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -310,17 +500,17 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 15vh;
     background-color: #ffffff;
 }
 
 #logo {
-    width: 15%;
-    height: auto;
+    height: 50%;
     padding-top: 1%;
 }
 
 .tituloHeader {
-    font-size: 0.5em;
+    font-size: .65em;
     color: rgb(14, 179, 191);
 }
 
@@ -339,10 +529,22 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
+    flex-basis: 50%;
+    width: 50%;
 }
 
 .descender img {
-    width: 40%;
+    width: 7.5%;
+}
+
+@media (orientation: portrait) {
+    .tituloHeader {
+        font-size: 1em;
+    }
+
+    .descender img {
+        width: 25%;
+    }
 }
 
 /*--------------------  BODY  --------------------*/
@@ -361,7 +563,7 @@ header {
 }
 
 .TituloSeccion1 {
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     font-size: 2.5em;
 }
