@@ -5,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>Aqua Data</title>
-    <!--<link rel="icon" type="image/png" href="img/icono_RiverView.png"> -->
+    <title>AquaData</title>
+    <link rel="icon" type="image/png" href="img/icono_AquaData.png">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
@@ -19,28 +19,28 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-
 </head>
 <body>
 <header>
-    <div class="Portada">
+    <div id="portada">
+        <img src="" id="botonNavegacion">
         <div id="idioma">ES/EN</div>
-        <div id="partePrimeraCabecera">
-            <div class="ContenedorLogo">
+        <div id="primeraParteCabecera">
+            <div id="contenedorLogo">
                 <img id="logo" src="img/logo@3x.png">
-                <h1 class="TituloHeader">DATOS FLUVIALES EN PRIMERA PERSONA</h1>
+                <h1 id="tituloHeader">DATOS FLUVIALES EN PRIMERA PERSONA</h1>
             </div>
         </div>
-        <div class="BotonDescenderHeader Descender">
-            <a href="#sec1" class="Pulse"><img src="img/navegador_parallax@3x.png"></a>
+        <div class="BotonDescender" id="botonHeader">
+            <a href="#seccion1"><img src="img/navegador_parallax@3x.png" class="Pulse"></a>
         </div>
     </div>
 </header>
 
-<section class="Seccion1" id="sec1">
-    <h1 class="TituloSeccion1">¿AquaData?</h1>
-    <div class="ContenedorCuadros">
-        <div class="Cuadro">
+<section id="seccion1">
+    <h1 id="tituloSeccion1">¿AquaData?</h1>
+    <div id="contenedorCuadros">
+        <div class="Cuadros">
             <img src="img/1.png" class="Iconos">
             <div class="TituloCuadro">Nuestra visión</div>
             <div class="TextoCuadro">Utilizar la <span>innovación</span> para proteger el
@@ -48,14 +48,14 @@
                 contribuir a su <span>sostenibilidad</span> y generar <span>actividad económica.</span>
             </div>
         </div>
-        <div class="Cuadro" id="CuadroCentral">
+        <div class="Cuadros" id="CuadroCentral">
             <img src="img/2.png" class="Iconos">
             <div class="TituloCuadro">¿Qué hacemos?</div>
             <div class="TextoCuadro">Desarrollar <span>soluciones tecnológicas</span> para problemas relacionados
                 con los
                 <span>RÍOS</span></div>
         </div>
-        <div class="Cuadro">
+        <div class="Cuadros">
             <img src="img/3.png" class="Iconos">
             <div class="TituloCuadro">¿Cómo hacemos?</div>
             <div class="TextoCuadro">Utilizando la <span>innovación tecnologica:</span></div>
@@ -66,97 +66,98 @@
             </ul>
         </div>
     </div>
-    <div class="BotonDescender Pulse Descender">
-        <a href="#sec2"><img src="img/navegador_parallax@3x.png"></a>
+    <div class="BotonDescender" id="botonSeccion1">
+        <a href="#tituloSeccion2"><img src="img/navegador_parallax@3x.png" class="Pulse"></a>
     </div>
 </section>
 
-<section class="seccion2">
-    <div class="tituloSeccion2" id="sec2">utilidad versátil de <span>nuestras soluciones</span></div>
+<section id="seccion2">
+    <div id="tituloSeccion2">utilidad versátil de <span>nuestras soluciones</span></div>
     <div class="ContenedorCuadros2">
 
-            <div class="CuadroSec2" id="iconPescaDeportiva" onclick="location.href='http://www.google.com';"
-                 style="cursor:pointer;">
+        <div class="CuadroSec2" id="iconPescaDeportiva" onclick="location.href='http://www.google.com';"
+             style="cursor:pointer;">
 
-                <img src="img/pesca_deportiva@3x.png" class="IconosSeccion2">
-                <div class="TituloCuadro2" >Pesca Deportiva</div>
-            </div>
+            <img src="img/pesca_deportiva@3x.png" class="IconosSeccion2">
+            <div class="TituloCuadro2">Pesca Deportiva</div>
+        </div>
 
-            <div class="CuadroSec2" id="iconoDepuracion">
-                <img src="img/depuracion@3x.png" class="IconosSeccion2">
-                <div class="TituloCuadro2" >Depuración</div>
-            </div>
+        <div class="CuadroSec2" id="iconoDepuracion">
+            <img src="img/depuracion@3x.png" class="IconosSeccion2">
+            <div class="TituloCuadro2">Depuración</div>
+        </div>
 
-            <div class="CuadroSec2" id="cuadroAgricultura">
-                <img src="img/africultura@3x.png" class="IconosSeccion2">
-                <div class="TituloCuadro2">Agricultura y regadía</div>
+        <div class="CuadroSec2" id="cuadroAgricultura">
+            <img src="img/africultura@3x.png" class="IconosSeccion2">
+            <div class="TituloCuadro2">Agricultura y regadía</div>
 
         </div>
 
-            <div class="CuadroSec2" id="fondoOcioGeneral" onclick="location.href='http://www.google.com';"
-                 style="cursor:pointer;">
+        <div class="CuadroSec2" id="fondoOcioGeneral" onclick="location.href='http://www.google.com';"
+             style="cursor:pointer;">
 
-                <img src="img/ocio@3x.png" class="IconosSeccion2">
-                <div class="TituloCuadro2" >Ocio General</div>
+            <img src="img/ocio@3x.png" class="IconosSeccion2">
+            <div class="TituloCuadro2">Ocio General</div>
+        </div>
+
+        <div class="CuadroSec2" id="iconoSalud">
+            <img src="img/salud@3x.png" class="IconosSeccion2">
+            <div class="TituloCuadro2">Salud</div>
+        </div>
+
+        <div class="CuadroSec2" id="iconoIdentificacion">
+            <img src="img/obstaculos@3x.png" class="IconosSeccion2">
+            <div class="TituloCuadro2">Identificación de obstáculos</div>
+        </div>
+    </div>
+    <div class="BotonDescender Pulse Descender">
+        <a href="#sec3"><img src="img/navegador_parallax@3x.png"></a>
+    </div>
+</section>
+
+<section class="Seccion3">
+    <div class="tituloSeccion3" id="sec3">nuestros productos</div>
+    <div class="ContenedorMoviles">
+        <div class="seccion1Moviles">
+            <div class="imgMovil">
+                <img src="img/MOC_APP_CLIC_AND_FISH_AQUADATA.png" class="imagenMovil1">
             </div>
-
-            <div class="CuadroSec2" id="iconoSalud">
-                <img src="img/salud@3x.png" class="IconosSeccion2">
-                <div class="TituloCuadro2">Salud</div>
-            </div>
-
-            <div class="CuadroSec2" id="iconoIdentificacion">
-                <img src="img/obstaculos@3x.png" class="IconosSeccion2">
-                <div class="TituloCuadro2" >Identificación de obstáculos</div>
+            <div class="imgLogos">
+                <img src="img/clic@3x.png" class="iconoClicFish">
+                <h1>TU HERRAMIENTA, DE PESCA</h1>
+                <div class="iconosFunciones">
+                    <img src="img/360.png" class="conjuntoIcnos">
+                    <img src="img/icono_camaras.png" class="conjuntoIcnos">
+                    <img src="img/icono_recomendacion.png" class="conjuntoIcnos">
+                </div>
+                <div class="iconosTienda">
+                    <div class="iconoAndroid">
+                        <img src="img/google.png" class="google">
+                    </div>
+                    <div class="iconoIos">
+                        <img src="img/appstore.png" class="ios">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="BotonDescender2 pulse descender">
-            <a href="#sec3"><img src="img/navegador_parallax@3x.png"></a>
-        </div>
-    </section>
-    <section class="Seccion3">
-        <div class="tituloSeccion3" id="sec3">nuestros productos</div>
-        <div class="ContenedorMoviles">
-            <div class="seccion1Moviles">
-                <div class="imgMovil">
-                    <img src="img/MOC_APP_CLIC_AND_FISH_AQUADATA.png" class="imagenMovil1">
-                </div>
-                <div class="imgLogos">
-                    <img src="img/clic@3x.png" class="iconoClicFish">
-                    <h1>TU HERRAMIENTA, DE PESCA</h1>
-                    <div class="iconosFunciones">
-                        <img src="img/360.png" class="conjuntoIcnos">
-                        <img src="img/icono_camaras.png" class="conjuntoIcnos">
-                        <img src="img/icono_recomendacion.png" class="conjuntoIcnos">
-                    </div>
-                    <div class="iconosTienda">
-                        <div class="iconoAndroid">
-                            <img src="img/google.png" class="google">
-                        </div>
-                        <div  class="iconoIos">
-                            <img src="img/appstore.png" class="ios">
-                        </div>
-                    </div>
-                </div>
+        <div class="seccion2Moviles">
+            <div class="imgMovil">
+                <img src="img/MOC_APP_RIVER_VIEW_AQUADATA.png" class="imagenMovil2">
             </div>
-            <div class="seccion2Moviles">
-                <div class="imgMovil">
-                    <img src="img/MOC_APP_RIVER_VIEW_AQUADATA.png" class="imagenMovil2">
+            <div class="imgLogos">
+                <img src="img/river@3x.png" class="iconoRiver">
+                <h1>TU RÍO EN UN CLIC</h1>
+                <div class="iconosFunciones" id="iconoFuncionesRv">
+                    <img src="img/360Azul.png" class="conjuntoIcnos">
+                    <img src="img/PIRAGUA.png" class="conjuntoIcnos">
+                    <img src="img/RAFTING.png" class="conjuntoIcnos">
+                    <img src="img/CAMARA.png" class="conjuntoIcnos">
+                    <img src="img/TREKKIN.png" class="conjuntoIcnos">
+                    <img src="img/NATURALEZA.png" class="conjuntoIcnos">
+                    <img src="img/NATACION.png" class="conjuntoIcnos">
                 </div>
-                <div class="imgLogos">
-                    <img src="img/river@3x.png" class="iconoRiver">
-                    <h1>TU RÍO EN UN CLIC</h1>
-                    <div class="iconosFunciones" id="iconoFuncionesRv">
-                        <img src="img/360Azul.png" class="conjuntoIcnos">
-                        <img src="img/PIRAGUA.png" class="conjuntoIcnos">
-                        <img src="img/RAFTING.png" class="conjuntoIcnos">
-                        <img src="img/CAMARA.png" class="conjuntoIcnos">
-                        <img src="img/TREKKIN.png" class="conjuntoIcnos">
-                        <img src="img/NATURALEZA.png" class="conjuntoIcnos">
-                        <img src="img/NATACION.png" class="conjuntoIcnos">
-                    </div>
-                    <div class="iconosTienda">
-                        <div class="iconoAndroid">
+                <div class="iconosTienda">
+                    <div class="iconoAndroid">
                         <img src="img/google.png" class="google">
                     </div>
                     <div class="iconoIos">
@@ -166,10 +167,11 @@
             </div>
         </div>
     </div>
-    <div class="BotonDescender3 Pulse Descender">
+    <div class="BotonDescender Pulse Descender" id="botonSeccion3">
         <a href="#sec4"><img src="img/navegador_parallax@3x.png"></a>
     </div>
 </section>
+
 <section class="Seccion4" id="sec4">
     <div class="contenedorFormularios">
 
@@ -181,9 +183,10 @@
             </div>
             <div class="campoEmail">
                     <textarea id="emailEfecto" name="texto" onKeyDown="efectoMail(0)" onKeyUp="efectoMail(0)"
-                              onmouseover="efectoMail(1)" onmouseleave="efectoMail(2)" rows="1" maxlength="50" ></textarea>
-                </div>
+                              onmouseover="efectoMail(1)" onmouseleave="efectoMail(2)" rows="1"
+                              maxlength="50"></textarea>
             </div>
+        </div>
 
         <div class="formularioAsunto">
             <div class="etiqueta">
@@ -191,12 +194,13 @@
             </div>
             <div class="campoAsunto">
                     <textarea id="asuntoEfecto" name="texto" onKeyDown="efectoAsunto(0)" onKeyUp="efectoAsunto(0)"
-                              onmouseover="efectoAsunto(1)" onmouseleave="efectoAsunto(2)" rows="15" maxlength="600"></textarea>
-                    <div class="botonEnviar">
-                        <input type="button" class="btn" value="enviar">
-                    </div>
+                              onmouseover="efectoAsunto(1)" onmouseleave="efectoAsunto(2)" rows="15"
+                              maxlength="600"></textarea>
+                <div class="botonEnviar">
+                    <input type="button" class="btn" value="enviar">
                 </div>
             </div>
+        </div>
 
     </div>
 </section>

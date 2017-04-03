@@ -1,14 +1,13 @@
+$(function () {
 
-$(function(){
+    $('a[href*=#]').click(function () {
 
-    $('a[href*=#]').click(function() {
-
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
             && location.hostname == this.hostname) {
 
             var $target = $(this.hash);
 
-            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
 
             if ($target.length) {
 
@@ -32,16 +31,16 @@ function efectoMail(y) {
     var elemento = document.getElementById("emailEfecto");
 
     if (y == 0) {
-        if (elemento.value.length == 0 ) {
+        if (elemento.value.length == 0) {
             document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
 
         } else {
             document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
         }
-    }else if(y == 1){
+    } else if (y == 1) {
         document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
 
-    }else{
+    } else {
         if (elemento.value.length == 0) {
             document.getElementById("emailEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
         } else {
@@ -56,14 +55,14 @@ function efectoAsunto(x) {
     var elemento2 = document.getElementById("asuntoEfecto");
 
     if (x == 0) {
-        if (elemento2.value.length == 0  ) {
+        if (elemento2.value.length == 0) {
             document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
         } else {
             document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
         }
-    }else if(x == 1){
+    } else if (x == 1) {
         document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0.25)';
-    }else{
+    } else {
         if (elemento2.value.length == 0) {
             document.getElementById("asuntoEfecto").style.backgroundColor = 'rgba(0, 0, 0, 0)';
         } else {
