@@ -393,6 +393,8 @@
 
 body {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     margin: 0 auto;
     font-family: Roboto, arial, sans-serif;
 }
@@ -518,7 +520,7 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     flex-grow: 1;
     padding-bottom: 2%;
 }
@@ -533,7 +535,7 @@ header {
 }
 
 .Descender img {
-    width: 7.5%;
+    width: 6vh;
 }
 
 @media (orientation: portrait) {
@@ -589,6 +591,20 @@ header {
     justify-content: center;
 }
 
+html>/**/body .Cuadro, x:-moz-any-link, x:default{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-width: thin;
+    border-color: #fff;
+    border-style: solid;
+    color: #fff;
+    flex-basis: 20%;
+    width: 20%;
+    padding: 3% 1.5%;
+}
+
+
 .Cuadro {
     display: flex;
     flex-flow: column;
@@ -639,7 +655,7 @@ header {
     align-items: center;
     align-content: center;
     flex-basis: 100%;
-    width: 100%;
+    width: 100vw;
     height: 5em;
 }
 
@@ -652,16 +668,16 @@ header {
 }
 
 .BotonDescender img  {
-    width: 7%;
+    width: 6vh;
 }
 
 .BotonDescender2 img{
-    width: 47%;
+    width: 6vh;
     z-index: 1;
 }
 
 .BotonDescender3 img{
-    width: 47%;
+    width: 6vh;
 }
 
 @media (max-width: 768px) {
@@ -715,6 +731,10 @@ header {
     .BotonDescender a {
         display: none;
     }
+
+    .BotonDescenderHeader a {
+        display: none;
+    }
 }
 
 @media (orientation: portrait) and (max-height: 768px) {
@@ -747,9 +767,6 @@ header {
 }
 
 /*---------- SECCIÓN 2 ----------*/
-.seccion2 {
-    height: 100vh;
-}
 
 .TituloCuadro2 {
     display: flex;
@@ -796,6 +813,7 @@ header {
     align-items: center;
     align-content: center;
     height: 5px;
+    width: 100vw;
 }
 
 .tituloSeccion2 {
@@ -828,7 +846,7 @@ header {
     }
 
     .tituloSeccion2 {
-        font-size: 4em;
+        font-size: 2em;
         margin-bottom: 5%;
     }
 
@@ -837,7 +855,7 @@ header {
     }
 
     .CuadroSec2 {
-        height: 500px;
+        height: 20em;
     }
 
     .IconosSeccion2 {
@@ -1160,6 +1178,39 @@ header {
     .BotonDescender2 img, .BotonDescender3 img {
         display: none;
     }
+
+    .formularioAsunto, .formularioEmail {
+        width: 80%;
+    }
+
+    .contenedorFormularios{
+        padding: 0;
+    }
+
+    .formularioAsunto, .formularioEmail {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2.5%;
+        width: 100%;
+    }
+
+    .TituloSeccion4{
+        font-size: 2em;
+    }
+
+    .etiqueta{
+        font-size: 1.2em;
+        width: 55%;
+        margin: 2% 5% 1.5% 0;
+    }
+
+    .campoAsunto textarea, .campoEmail textarea{
+        font-size: 1em;
+    }
+
+
+
 }
 
 /*-------------------- FOOTER --------------------*/
@@ -1291,7 +1342,7 @@ footer {
 @media (max-width: 768px) {
     .Avisos {
         padding: 6% 0;
-        font-size: 3em;
+        font-size: 1.8em;
     }
 
     .Avisos div {
@@ -1300,6 +1351,6 @@ footer {
     }
 
     .Copyright {
-        font-size: 3em;
+        font-size: 1.8em;
     }
 }
