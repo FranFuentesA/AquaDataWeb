@@ -5,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <title>Aqua Data</title>
-    <!--<link rel="icon" type="image/png" href="img/icono_RiverView.png"> -->
+    <title>AquaData</title>
+    <link rel="icon" type="image/png" href="img/icono_AquaData.png">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
@@ -23,12 +23,13 @@
 </head>
 <body>
 <header>
-    <div class="Portada">
+    <div id="portada">
+        <img src="" id="botonNavegacion">
         <div id="idioma">ES/EN</div>
         <div id="partePrimeraCabecera">
             <div class="ContenedorLogo">
                 <img id="logo" src="img/logo@3x.png">
-                <h1 class="TituloHeader">DATOS FLUVIALES EN PRIMERA PERSONA</h1>
+                <h1 id="tituloHeader">DATOS FLUVIALES EN PRIMERA PERSONA</h1>
             </div>
         </div>
         <div class="BotonDescenderHeader Descender">
@@ -96,14 +97,14 @@
             <div class="CuadroSec2" id="fondoOcioGeneral" onclick="location.href='http://www.google.com';"
                  style="cursor:pointer;">
 
-                <img src="img/ocio@3x.png" class="IconosSeccion2">
-                <div class="TituloCuadro2" >Ocio General</div>
-            </div>
+            <img src="img/ocio@3x.png" class="IconosSeccion2">
+            <div class="TituloCuadro2">Ocio General</div>
+        </div>
 
-            <div class="CuadroSec2" id="iconoSalud">
-                <img src="img/salud@3x.png" class="IconosSeccion2">
-                <div class="TituloCuadro2">Salud</div>
-            </div>
+        <div class="CuadroSec2" id="iconoSalud">
+            <img src="img/salud@3x.png" class="IconosSeccion2">
+            <div class="TituloCuadro2">Salud</div>
+        </div>
 
             <div class="CuadroSec2" id="iconoIdentificacion">
                 <img src="img/obstaculos@3x.png" class="IconosSeccion2">
@@ -174,6 +175,7 @@
         <a href="#sec4" class="Pulse"><img src="img/navegador_parallax@3x.png"></a>
     </div>
 </section>
+
 <section class="Seccion4" id="sec4">
     <div class="contenedorFormularios">
 
