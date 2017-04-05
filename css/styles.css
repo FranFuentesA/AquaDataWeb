@@ -856,7 +856,165 @@ header {
 
 }
 
-/*---------- SECCIÓN 3 ----------*/
+/* seccion 3 nueva*/
+
+.seccion3 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.tituloSeccion3 {
+    margin: 8% 0 5% 0;
+    color: #74C6D1;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#primeraDivision{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.primeraSubdivision {
+    flex-basis: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.segundaSubdivision {
+    flex-basis: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#SegundaDivision{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+#imagenMovil1, #imagenMovil2 {
+    width: 20vw;
+}
+
+#iconoRiver {
+    width: 20vw;
+}
+
+#iconoClicFish{
+    width: 25vw;
+    margin-top: 6vw;
+}
+
+.conjuntoIcnos {
+    width: 3vw;
+    margin: 5vw 0;
+}
+
+.google {
+    margin-right: 2%;
+    flex-basis: 90%;
+    width: 90%;
+    height: auto;
+}
+
+.ios {
+    flex-basis: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.iconoAndroid, .iconoIos {
+    flex-basis: 40%;
+    width: 40%;
+}
+
+.iconosTienda {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.BotonDescender3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+
+/* media */
+
+@media (max-width: 768px) {
+
+    .tituloSeccion3 {
+        font-size: 4em;
+    }
+
+    .seccion3, #primeraDivision, #SegundaDivision{
+        flex-direction: column;
+    }
+
+    #imagenMovil1, #imagenMovil2 {
+        width: 50vw;
+    }
+
+    #iconoRiver {
+        width: 50vw;
+        margin-top: 10vw;
+    }
+
+    #iconoClicFish{
+        width: 50vw;
+        margin-top:10vw;
+    }
+
+    .conjuntoIcnos {
+        width: 6vw;
+        margin: 5vw 1vw 5vw 1vw;
+    }
+
+    .iconosTienda {
+        margin-bottom: 15vw;
+    }
+
+    .google {
+        margin-right: 2%;
+        flex-basis: 90%;
+        width: 90%;
+        height: auto;
+    }
+
+    .ios {
+        flex-basis: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+/**********************/
+
+/*  fin seccion 3 nueva */
+
+/*
+!*---------- SECCIÓN 3 ----------*!
 .seccion3 {
     height: 100vh;
 }
@@ -1009,6 +1167,9 @@ header {
         padding: 10%;
     }
 }
+*/
+
+
 
 /*---------- SECCIÓN 4 ----------*/
 #sec4 {
