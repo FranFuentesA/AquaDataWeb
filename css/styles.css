@@ -591,20 +591,6 @@ header {
     justify-content: center;
 }
 
-html>/**/body .Cuadro, x:-moz-any-link, x:default{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    border-width: thin;
-    border-color: #fff;
-    border-style: solid;
-    color: #fff;
-    flex-basis: 20%;
-    width: 20%;
-    padding: 3% 1.5%;
-}
-
-
 .Cuadro {
     display: flex;
     flex-flow: column;
@@ -654,8 +640,6 @@ html>/**/body .Cuadro, x:-moz-any-link, x:default{
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-basis: 100%;
-    width: 100vw;
     height: 5em;
 }
 
@@ -855,7 +839,8 @@ html>/**/body .Cuadro, x:-moz-any-link, x:default{
     }
 
     .CuadroSec2 {
-        height: 20em;
+        height: 50vh;
+        -moz-box-sizing: border-box;
     }
 
     .IconosSeccion2 {
@@ -1059,14 +1044,12 @@ html>/**/body .Cuadro, x:-moz-any-link, x:default{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 100%;
-    width: 100%;
     padding: 5% 5% 5% 0;
     background: url(../img/360@3x.png) no-repeat;
     background-color: rgba(0, 0, 0, 0.25);
     background-size: 30%;
     background-position: center;
-    height: 100%;
+    height: 100vh;
 }
 
 .etiqueta {
@@ -1091,10 +1074,6 @@ html>/**/body .Cuadro, x:-moz-any-link, x:default{
     flex-direction: column;
 }
 
-.campoEmail {
-    overflow: hidden;
-}
-
 .campoAsunto textarea, .campoEmail textarea {
     flex-basis: 100%;
     width: 100%;
@@ -1109,8 +1088,6 @@ html>/**/body .Cuadro, x:-moz-any-link, x:default{
     resize: none;
     font-size: .7em;
     color: white;
-    overflow: hidden;
-    white-space: pre-wrap;
 }
 
 .campoAsunto:hover textarea, .campoEmail:hover textarea {
