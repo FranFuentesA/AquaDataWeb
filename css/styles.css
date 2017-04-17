@@ -635,7 +635,8 @@ header {
     border-color: #fff;
     border-style: solid;
     color: #fff;
-    width: 20vw;
+    width: 22vw;
+    height: 55vh;
     padding: 3% 1.5%;
 }
 
@@ -720,9 +721,9 @@ header {
 
 @media (max-width: 768px) {
 
-    .Seccion1{
-        height: 225vh;
-    }
+    /* .Seccion1{
+         height: 225vh;
+     }*/
 
     .TituloSeccion1 {
         font-size: 4.9em;
@@ -747,9 +748,9 @@ header {
     }
 
     .Cuadro {
-
         width: 70vw;
-        padding: 10% 3%;
+        height: 60vh;
+        padding: 6vh 3vh;
     }
 
     .TituloCuadro {
@@ -763,8 +764,9 @@ header {
 
     #CuadroCentral {
         margin: 5vh;
-        padding: 10% 3% 15% 3%;
-
+        height: auto;
+        width: 50vh;
+        padding: 10vh 3vh 15vh 3vh;
     }
 
     .ListaCuadro {
@@ -802,6 +804,7 @@ header {
 
     .Cuadro {
         width: 70vw;
+        height: 55vh;
         padding: 15% 5%;
     }
 
@@ -815,6 +818,8 @@ header {
 
     #CuadroCentral {
         margin: 5vh;
+        width: 70vw;
+        height: 55vh;
         padding: 15% 3% 25% 3%;
     }
 
@@ -871,8 +876,8 @@ header {
     -webkit-flex-grow: 1;
     background-color: #e8e8e8;
     -ms-flex-preferred-size: 30%;
-  /*  -webkit-flex-basis: 30%;
-    flex-basis: 30%;*/
+    /*  -webkit-flex-basis: 30%;
+      flex-basis: 30%;*/
     width: 23vw;
     min-width: 30%;
     margin: 0.3%;
@@ -949,9 +954,9 @@ header {
 
 @media (max-width: 768px) {
 
-    .seccion2 {
-        height: 320vh;
-    }
+    /* .seccion2 {
+         height: 320vh;
+     }*/
 
     .tituloSeccion2 {
         font-size: 2em;
@@ -982,224 +987,6 @@ header {
 
 }
 
-/* seccion 3 nueva*/
-
-.seccion3 {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row;
-    flex-flow: row;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-flex;
-    -webkit-justify-content: center;
-    -webkit-align-items: center;
-    background-color: #ffffff;
-    height: auto;
-}
-
-.tituloSeccion3 {
-    margin: 8% 0 5% 0;
-    color: #74C6D1;
-    font-size: 1.3em;
-    font-weight: bold;
-    text-align: center;
-}
-
-#primeraDivision{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row;
-    flex-flow: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    display: -webkit-flex;
-    -webkit-justify-content: space-around;
-    -webkit-align-items: center;
-    -webkit-flex-basis: 50%;
-}
-
-.primeraSubdivision {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-basis: 40%;
-    -webkit-justify-content: center;
-    -webkit-align-items: center;
-    display: -webkit-flex;
-}
-
-.segundaSubdivision {
-    -ms-flex-preferred-size: 60%;
-    flex-basis: 60%;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-basis: 60%;
-    -webkit-justify-content: center;
-    -webkit-align-items: center;
-    display: -webkit-flex;
-}
-
-#SegundaDivision{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row;
-    flex-flow: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    display: -webkit-flex;
-    -webkit-justify-content: space-around;
-    -webkit-align-items: center;
-    -webkit-flex-basis: 50%;
-}
-
-#imagenMovil1, #imagenMovil2 {
-    width: 20vw;
-}
-
-#iconoRiver {
-    width: 20vw;
-}
-
-#iconoClicFish{
-    width: 25vw;
-    margin-top: 6vw;
-}
-
-.conjuntoIcnos {
-    width: 3vw;
-    margin: 5vw 0;
-}
-
-.google {
-    margin-right: 2%;
-    -ms-flex-preferred-size: 90%;
-    flex-basis: 90%;
-    width: 90%;
-    height: auto;
-}
-
-.ios {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    width: 100%;
-    height: auto;
-}
-
-.iconoAndroid, .iconoIos {
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    width: 40%;
-}
-
-.iconosTienda {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: center;
-    justify-content: center;
-    display: -webkit-flex;
-    -webkit-justify-content: center;
-    height: auto;
-    width: 100%;
-}
-
-.BotonDescender3 {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    display: -webkit-flex;
-    -webkit-justify-content: center;
-    -webkit-align-items: center;
-    -webkit-align-content: center;
-    margin-bottom: 5%;
-}
-
-
-/* media */
-
-@media (max-width: 768px) {
-
-    .tituloSeccion3 {
-        font-size: 4em;
-    }
-
-    .seccion3, #primeraDivision, #SegundaDivision{
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
-    #imagenMovil1, #imagenMovil2 {
-        width: 50vw;
-    }
-
-    #iconoRiver {
-        width: 50vw;
-        margin-top: 10vw;
-    }
-
-    #iconoClicFish{
-        width: 50vw;
-        margin-top:10vw;
-    }
-
-    .conjuntoIcnos {
-        width: 6vw;
-        margin: 5vw 1vw 5vw 1vw;
-    }
-
-    .iconosTienda {
-        margin-bottom: 15vw;
-    }
-
-    .google {
-        margin-right: 2%;
-        -ms-flex-preferred-size: 90%;
-        flex-basis: 90%;
-        width: 90%;
-        height: auto;
-    }
-
-    .ios {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        width: 100%;
-        height: auto;
-    }
-}
-
-
-
-/**********************/
-
-/*  fin seccion 3 nueva */
 
 /*---------- SECCIÓN 3 ----------*/
 
@@ -1234,34 +1021,41 @@ header {
     flex-direction: row;
     -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
     display: -webkit-flex;
     -webkit-justify-content: center;
-    -webkit-flex-basis: 50%;
+    width: 50vw;
+    height: auto;
+
+}
+
+#seccionClicFish{
+    margin: 16vw 0;
+}
+
+#seccionRiverView{
+    margin: 12vw 0;
 }
 
 .imagenMovil1, .imagenMovil2 {
     display: -ms-flexbox;
     display: flex;
     height: auto;
-    width: 80%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
+    width: 20vw;
     display: -webkit-flex;
-    -webkit-flex-basis: 50%;
 }
 
 .iconoClicFish {
     height: auto;
-    width: 95%;
-    margin-top: 30%;
+    width: 20vw;
 }
 
 .iconoRiver {
     height: auto;
-    width: 60%;
-    margin-top: 18%;
+    width: 20vw;
+}
+
+#tituloClic{
+    margin-bottom: 5vh;
 }
 
 .imgMovil, .imgLogos {
@@ -1271,8 +1065,6 @@ header {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
     -ms-flex-item-align: center;
     align-self: center;
     -ms-grid-column-align: start;
@@ -1280,9 +1072,9 @@ header {
     display: -webkit-flex;
     -webkit-justify-content: center;
     -webkit-align-items: center;
-    -webkit-flex-basis: 50%;
     -webkit-align-self: center;
     -webkit-justify-items: start;
+    width: 50vw;
 }
 
 .imgLogos {
@@ -1292,17 +1084,14 @@ header {
     flex-direction: column;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    width: 50%;
+    width: 50vw;
     height: auto;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
     display: -webkit-flex;
     -webkit-align-self: flex-start;
-    -webkit-flex-basis: 50%;
 }
 
 .imgLogos h1 {
-    font-size: 1em;
+    font-size: 1.4em;
     color: #8c8c8c;
     text-align: center;
 }
@@ -1314,15 +1103,14 @@ header {
     flex-direction: row;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-right: 20px;
     height: auto;
-    width: 100%;
+    width: 20vw;
     display: -webkit-flex;
     -webkit-justify-content: center;
 }
 
 .iconosFunciones {
-    margin-bottom: 15%;
+    margin-bottom: 5vh;
 }
 
 #iconoFuncionesRv {
@@ -1332,7 +1120,6 @@ header {
     flex-direction: row;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: 5%;
     display: -webkit-flex;
     -webkit-justify-content: center;
 }
@@ -1345,23 +1132,18 @@ header {
 
 .google {
     margin-right: 2%;
-    -ms-flex-preferred-size: 90%;
-    flex-basis: 90%;
-    width: 90%;
+    width: 9vw;
     height: auto;
 }
 
 .ios {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    width: 100%;
+    width: 10vw;
     height: auto;
 }
 
 .iconoAndroid, .iconoIos {
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    width: 50%;
+    height: auto;
+    width: 50vw;
 }
 
 .BotonDescender3 {
@@ -1395,10 +1177,15 @@ header {
     -webkit-align-content: center;
 }
 
+@media (max-width: 1594px) {
+
+}
+
+
 @media (max-width: 768px) {
 
     .tituloSeccion3 {
-        font-size: 4em;
+        font-size: 2.5em;
     }
 
     .ContenedorMoviles {
@@ -1409,17 +1196,44 @@ header {
     .seccion1Moviles, .seccion2Moviles {
         -ms-flex-direction: column;
         flex-direction: column;
+        width: 100vw;
     }
 
-    .iconoClicFish, .iconoRiver {
-        margin: 5% 0;
+    .conjuntoIcnos {
+        width: auto;
+        height: 6vh;
+
     }
 
-    .imgLogos {
-        width: 100%;
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        padding: 10%;
+    .iconoClicFish {
+        height: auto;
+        width: 70vw;
+    }
+
+    .iconoRiver {
+        height: auto;
+        width: 50vw;
+    }
+
+    .imagenMovil1, .imagenMovil2 {
+        width: 70vw;
+        height: auto;
+    }
+
+    .imgMovil, .imgLogos {
+        width: 100vw;
+        margin: 5vh 0;
+    }
+
+    .google{
+        margin-right: 2vw;
+        width: 35vw;
+        height: auto;
+    }
+
+    .ios{
+        width: 40vw;
+        height: auto;
     }
 }
 
@@ -1478,10 +1292,11 @@ header {
 .etiqueta {
     color: #ffffff;
     font-size: 0.6em;
-    -ms-flex-preferred-size: 20%;
-    flex-basis: 20%;
-    width: 10%;
-    margin-right: 5%;
+    margin-right: 5vw;
+}
+
+#etiquetaAsunto{
+    margin-right: 5.8vw
 }
 
 .formularioAsunto, .formularioEmail {
@@ -1491,24 +1306,18 @@ header {
     flex-direction: row;
     display: -webkit-flex;
     margin-bottom: 2.5%;
-    width: 50%;
 }
 
 .campoAsunto, .campoEmail {
-    width: 60%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-preferred-size: 60%;
-    flex-basis: 60%;
     display: -webkit-flex;
 }
 
 .campoAsunto textarea, .campoEmail textarea {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    width: 100%;
+    width: 30vw;
     background-color: transparent;
     border: 1px solid #ffffff;
     scrollbar-arrow-color: #000066;
@@ -1520,6 +1329,14 @@ header {
     resize: none;
     font-size: .7em;
     color: white;
+}
+
+.campoEmail textarea{
+    height: 2.5vh;
+}
+
+.campoAsunto textarea{
+    height: 40vh;
 }
 
 .campoAsunto:hover textarea, .campoEmail:hover textarea {
@@ -1608,12 +1425,22 @@ header {
 
     .etiqueta{
         font-size: 1.2em;
-        width: 55%;
+        width: 55vw;
         margin: 2% 5% 1.5% 0;
     }
 
     .campoAsunto textarea, .campoEmail textarea{
         font-size: 1em;
+    }
+
+    #asuntoEfecto{
+        height: 30vh;
+        width: 60vw
+    }
+
+    #emailEfecto{
+        height: 3vh;
+        width: 60vw
     }
 
 
@@ -1795,3 +1622,4 @@ footer {
         font-size: 1.8em;
     }
 }
+
