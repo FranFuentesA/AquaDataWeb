@@ -637,7 +637,7 @@ header {
     color: #fff;
     width: 22vw;
     height: 55vh;
-    padding: 3% 1.5%;
+    padding: 5vh 1.5vw;
 }
 
 .TituloCuadro {
@@ -1125,8 +1125,8 @@ header {
 }
 
 .conjuntoIcnos {
-    width: 13%;
-    height: 5%;
+    width: 3vw;
+    height: 5vh;
     margin: 0 1% 0 1%;
 }
 
