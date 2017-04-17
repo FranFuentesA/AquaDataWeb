@@ -427,23 +427,6 @@ body {
     }
 }
 
-@-webkit-keyframes pulse {
-    0% {
-        -webkit-transform: scale(0.95);
-        opacity: 0.7;
-    }
-
-    50% {
-        -webkit-transform: scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        -webkit-transform: scale(0.95);
-        opacity: 0.7;
-    }
-}
-
 /*-------------------- HEADER --------------------*/
 header {
     position: relative;
@@ -474,43 +457,50 @@ header {
 }
 
 .Portada {
+    display: -ms-flexbox;
     display: flex;
     display: -webkit-flex;
+    -ms-flex-flow: column;
     flex-flow: column;
-    -webkit-flex-flow: column;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     -webkit-align-items: center;
     background: url(../img/fotoCabecera.jpg) center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     width: 100%;
     height: 100vh
 }
 
 #partePrimeraCabecera {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -ms-flex-align: center;
     align-items: center;
     display: -webkit-flex;
-    -webkit-flex-direction: column;
     -webkit-justify-content: flex-end;
     -webkit-align-items: center;
     width: 100%;
+    -ms-flex-positive: 1;
     flex-grow: 1;
 }
 
 .ContenedorLogo {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     display: -webkit-flex;
-    -webkit-flex-direction: column;
     -webkit-justify-content: center;
     -webkit-align-items: center;
     width: 100%;
@@ -528,25 +518,34 @@ header {
 }
 
 .BotonDescenderHeader {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: end;
     justify-content: flex-end;
+    -ms-flex-align: center;
     align-items: center;
     display: -webkit-flex;
-    -webkit-flex-direction: column;
     -webkit-justify-content: flex-end;
     -webkit-align-items: center;
     width: 100vw;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     -webkit-flex-grow: 1;
     padding-bottom: 2%;
 }
 
 .BotonDescenderHeader a {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     display: -webkit-flex;
     -webkit-justify-content: center;
@@ -585,19 +584,23 @@ header {
 /*--------------------  BODY  --------------------*/
 
 /*---------- SECCIÓN 1 ----------*/
+
+
+
 .Seccion1 {
     background: url(../img/secPrimBack_recortada_oscurecido.jpg) no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     padding-top: 4.4%;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: center;
     justify-content: center;
     display: -webkit-flex;
-    -webkit-flex-direction: column;
     -webkit-justify-content: center;
+    height: auto;
+
 }
 
 .TituloSeccion1 {
@@ -611,25 +614,30 @@ header {
 }
 
 .ContenedorCuadros {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: center;
     justify-content: center;
     display: -webkit-flex;
-    -webkit-flex-direction: row;
     -webkit-justify-content: center;
 }
 
 .Cuadro {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: column;
     flex-flow: column;
+    -ms-flex-align: center;
     align-items: center;
     display: -webkit-flex;
-    -webkit-flex-flow: column;
     -webkit-align-items: center;
     border-width: thin;
     border-color: #fff;
     border-style: solid;
     color: #fff;
+    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
     -webkit-flex-basis: 20%;
     width: 20%;
@@ -653,6 +661,7 @@ header {
 }
 
 .ListaCuadro {
+    -ms-flex-item-align: start;
     align-self: flex-start;
     margin-top: 1%;
     line-height: 1.7em;
@@ -668,9 +677,13 @@ header {
 }
 
 .BotonDescender {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     display: -webkit-flex;
     -webkit-justify-content: center;
@@ -680,10 +693,15 @@ header {
 }
 
 .BotonDescender a {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     display:  -webkit-flex;
     -webkit-justify-content: center;
@@ -715,17 +733,21 @@ header {
     }
 
     .ContenedorCuadros {
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-pack: center;
         justify-content: center;
+        -ms-flex-align: center;
         align-items: center;
         display: -webkit-flex;
-        -webkit-flex-direction: column;
         -webkit-justify-content: center;
         -webkit-align-items: center;
     }
 
     .Cuadro {
+        -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
         width: 50%;
         padding: 10% 3%;
@@ -750,6 +772,7 @@ header {
     }
 
     .ContenedorMoviles {
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -772,6 +795,7 @@ header {
     }
 
     .Cuadro {
+        -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
         width: 70%;
         padding: 15% 5%;
@@ -797,8 +821,14 @@ header {
 
 /*---------- SECCIÓN 2 ----------*/
 
+.seccion2{
+    height: auto;
+}
+
 .TituloCuadro2 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
     display: -webkit-flex;
     -webkit-justify-content: center;
@@ -809,26 +839,34 @@ header {
 }
 
 .ContenedorCuadros2 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     display: -webkit-flex;
     -webkit-justify-content: center;
-    -webkit-flex-flow: row wrap;
+    height: auto;
 }
 
 .CuadroSec2 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-positive: 1;
     flex-grow: 1;
     display: -webkit-flex;
     -webkit-justify-content: center;
     -webkit-align-items: center;
-    -webkit-flex-direction: column;
     -webkit-flex-grow: 1;
     background-color: #e8e8e8;
+    -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     -webkit-flex-basis: 30%;
     min-width: 30%;
@@ -838,8 +876,11 @@ header {
 }
 
 .CuadroSec2 div {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     display: -webkit-flex;
     -webkit-justify-content: center;
@@ -851,9 +892,13 @@ header {
 }
 
 .BotonDescender2 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     display: -webkit-flex;
     -webkit-justify-content: center;
@@ -871,7 +916,10 @@ header {
     padding: 1%;
     text-align: center;
     font-size: 1.4em;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
+    height: auto;
 }
 
 .IconosSeccion2 {
@@ -880,9 +928,13 @@ header {
 }
 
 .BotonDescender2 a {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     display: -webkit-flex;
     -webkit-justify-content: center;
@@ -902,6 +954,7 @@ header {
     }
 
     .ContenedorCuadros2 {
+        -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
     }
 
@@ -926,15 +979,19 @@ header {
 /* seccion 3 nueva*/
 
 .seccion3 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row;
     flex-flow: row;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     display: -webkit-flex;
-    -webkit-flex-flow: row;
     -webkit-justify-content: center;
     -webkit-align-items: center;
     background-color: #ffffff;
+    height: auto;
 }
 
 .tituloSeccion3 {
@@ -946,22 +1003,30 @@ header {
 }
 
 #primeraDivision{
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row;
     flex-flow: row;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     display: -webkit-flex;
-    -webkit-flex-flow: row;
     -webkit-justify-content: space-around;
     -webkit-align-items: center;
     -webkit-flex-basis: 50%;
 }
 
 .primeraSubdivision {
+    -ms-flex-preferred-size: 40%;
     flex-basis: 40%;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-basis: 40%;
     -webkit-justify-content: center;
@@ -970,26 +1035,34 @@ header {
 }
 
 .segundaSubdivision {
+    -ms-flex-preferred-size: 60%;
     flex-basis: 60%;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
     -webkit-flex-basis: 60%;
     -webkit-justify-content: center;
     -webkit-align-items: center;
     display: -webkit-flex;
-    -webkit-flex-direction: column;
 }
 
 #SegundaDivision{
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: row;
     flex-flow: row;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     display: -webkit-flex;
-    -webkit-flex-flow: row;
     -webkit-justify-content: space-around;
     -webkit-align-items: center;
     -webkit-flex-basis: 50%;
@@ -1015,37 +1088,46 @@ header {
 
 .google {
     margin-right: 2%;
+    -ms-flex-preferred-size: 90%;
     flex-basis: 90%;
     width: 90%;
     height: auto;
 }
 
 .ios {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     width: 100%;
     height: auto;
 }
 
 .iconoAndroid, .iconoIos {
+    -ms-flex-preferred-size: 40%;
     flex-basis: 40%;
     width: 40%;
 }
 
 .iconosTienda {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: center;
     justify-content: center;
     display: -webkit-flex;
-    -webkit-flex-direction: row;
     -webkit-justify-content: center;
     height: auto;
     width: 100%;
 }
 
 .BotonDescender3 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     display: -webkit-flex;
     -webkit-justify-content: center;
@@ -1064,6 +1146,7 @@ header {
     }
 
     .seccion3, #primeraDivision, #SegundaDivision{
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1092,12 +1175,14 @@ header {
 
     .google {
         margin-right: 2%;
+        -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
         width: 90%;
         height: auto;
     }
 
     .ios {
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
         width: 100%;
         height: auto;
@@ -1126,29 +1211,36 @@ header {
 }
 
 .ContenedorMoviles {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: center;
     justify-content: center;
     display: -webkit-flex;
-    -webkit-flex-direction: row;
     -webkit-justify-content: center;
 }
 
 .seccion1Moviles, .seccion2Moviles {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     display: -webkit-flex;
-    -webkit-flex-direction: row;
     -webkit-justify-content: center;
     -webkit-flex-basis: 50%;
 }
 
 .imagenMovil1, .imagenMovil2 {
+    display: -ms-flexbox;
     display: flex;
     height: auto;
     width: 80%;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     display: -webkit-flex;
     -webkit-flex-basis: 50%;
@@ -1167,11 +1259,17 @@ header {
 }
 
 .imgMovil, .imgLogos {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
+    -ms-flex-item-align: center;
     align-self: center;
+    -ms-grid-column-align: start;
     justify-items: start;
     display: -webkit-flex;
     -webkit-justify-content: center;
@@ -1182,14 +1280,17 @@ header {
 }
 
 .imgLogos {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-item-align: start;
     align-self: flex-start;
     width: 50%;
     height: auto;
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     display: -webkit-flex;
-    -webkit-flex-direction: column;
     -webkit-align-self: flex-start;
     -webkit-flex-basis: 50%;
 }
@@ -1201,14 +1302,16 @@ header {
 }
 
 .iconosFunciones, .iconosTienda {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-right: 20px;
     height: auto;
     width: 100%;
     display: -webkit-flex;
-    -webkit-flex-direction: row;
     -webkit-justify-content: center;
 }
 
@@ -1217,12 +1320,14 @@ header {
 }
 
 #iconoFuncionesRv {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 5%;
     display: -webkit-flex;
-    -webkit-flex-direction: row;
     -webkit-justify-content: center;
 }
 
@@ -1234,26 +1339,33 @@ header {
 
 .google {
     margin-right: 2%;
+    -ms-flex-preferred-size: 90%;
     flex-basis: 90%;
     width: 90%;
     height: auto;
 }
 
 .ios {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     width: 100%;
     height: auto;
 }
 
 .iconoAndroid, .iconoIos {
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     width: 50%;
 }
 
 .BotonDescender3 {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     margin-bottom: 5%;
     display: -webkit-flex;
@@ -1263,9 +1375,13 @@ header {
 }
 
 .BotonDescender3 a {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     display: -webkit-flex;
     -webkit-justify-content: center;
@@ -1280,10 +1396,12 @@ header {
     }
 
     .ContenedorMoviles {
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     .seccion1Moviles, .seccion2Moviles {
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -1293,6 +1411,7 @@ header {
 
     .imgLogos {
         width: 100%;
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
         padding: 10%;
     }
@@ -1306,15 +1425,14 @@ header {
 
 .Seccion4 {
     background: url(../img/foto_aquadata.jpg) no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: center;
     justify-content: center;
     display: -webkit-flex;
-    -webkit-flex-direction: column;
     -webkit-justify-content: center;
     height: 100vh;
 }
@@ -1332,12 +1450,15 @@ header {
 }
 
 .contenedorFormularios {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     display: -webkit-flex;
-    -webkit-flex-direction: column;
     -webkit-justify-content: center;
     -webkit-align-items: center;
     padding: 5% 5% 5% 0;
@@ -1351,30 +1472,35 @@ header {
 .etiqueta {
     color: #ffffff;
     font-size: 0.6em;
+    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
     width: 10%;
     margin-right: 5%;
 }
 
 .formularioAsunto, .formularioEmail {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
     flex-direction: row;
     display: -webkit-flex;
-    -webkit-flex-direction: row;
     margin-bottom: 2.5%;
     width: 50%;
 }
 
 .campoAsunto, .campoEmail {
     width: 60%;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-preferred-size: 60%;
     flex-basis: 60%;
     display: -webkit-flex;
-    -webkit-flex-direction: column;
 }
 
 .campoAsunto textarea, .campoEmail textarea {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     width: 100%;
     background-color: transparent;
@@ -1410,10 +1536,7 @@ header {
     -o-transition:all .9s ease;
 }
 .CuadroSec2:hover img {
-    -webkit-transform:scale(1.8);
-    -moz-transform:scale(1.8);
     -ms-transform:scale(1.8);
-    -o-transform:scale(1.8);
     transform:scale(1.8);
 }
 
@@ -1425,8 +1548,6 @@ header {
 }
 
 .btn {
-    -moz-box-shadow: 1px 4px 8px 4px #757d73;
-    -webkit-box-shadow: 1px 4px 8px 4px #757d73;
     box-shadow: 1px 4px 8px 4px #000000;
     background-color: #ffffff;
     display: inline-block;
@@ -1465,8 +1586,11 @@ header {
     }
 
     .formularioAsunto, .formularioEmail {
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-align: center;
         align-items: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin-bottom: 2.5%;
         width: 100%;
@@ -1496,8 +1620,11 @@ footer {
     padding: 4% 0;
     color: #fff;
     text-align: center;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     display: -webkit-flex;
     -webkit-flex-wrap: wrap;
@@ -1505,9 +1632,12 @@ footer {
 }
 
 .ContactoRedesSociales {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-preferred-size: 35%;
     flex-basis: 35%;
     width: 35%;
+    -ms-flex-pack: center;
     justify-content: center;
     display: -webkit-flex;
     -webkit-flex-basis: 35%;
@@ -1515,6 +1645,7 @@ footer {
 }
 
 .ContactoRedesSociales a {
+    -ms-flex-preferred-size: 14%;
     flex-basis: 14%;
     width: 14%;
     margin: 0 1%;
@@ -1526,11 +1657,16 @@ footer {
 }
 
 .Avisos {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-preferred-size: 45%;
     flex-basis: 45%;
     width: 45%;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: .65em;
     display: -webkit-flex;
@@ -1551,15 +1687,18 @@ footer {
 
 .Copyright {
     width: 20%;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-direction: column;
     flex-direction: column;
     font-size: .65em;
     -webkit-flex-basis: 20%;
     display: -webkit-flex;
     -webkit-justify-content: center;
-    -webkit-flex-direction: column;
 }
 
 @media (max-width: 1792px) {
@@ -1575,15 +1714,18 @@ footer {
 @media (max-width: 1280px) {
     .ContactoRedesSociales, .Avisos, .Copyright {
         width: 100%;
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
 
     .ContactoRedesSociales {
+        -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 0 5%;
     }
 
     .ContactoRedesSociales a {
+        -ms-flex-preferred-size: 12%;
         flex-basis: 12%;
         width: 12%;
     }
@@ -1638,6 +1780,7 @@ footer {
     }
 
     .Avisos div {
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
         width: 100%;
     }
