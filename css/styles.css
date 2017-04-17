@@ -876,8 +876,9 @@ header {
     -webkit-flex-grow: 1;
     background-color: #e8e8e8;
     -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
-    -webkit-flex-basis: 30%;
+  /*  -webkit-flex-basis: 30%;
+    flex-basis: 30%;*/
+    width: 23vw;
     min-width: 30%;
     margin: 0.3%;
     padding: 0 1% 0 1%;
@@ -954,7 +955,7 @@ header {
 @media (max-width: 768px) {
 
     .seccion2 {
-        height: 315vh;
+        height: 320vh;
     }
 
     .tituloSeccion2 {
@@ -968,7 +969,8 @@ header {
     }
 
     .CuadroSec2 {
-        height: 25em;
+        height: 50vh;
+        width: 100vw;
         -moz-box-sizing: border-box;
     }
 
