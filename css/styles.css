@@ -805,7 +805,7 @@ header {
     .Cuadro {
         width: 70vw;
         height: 55vh;
-        padding: 15% 5%;
+        padding: 6vh 5vw;
     }
 
     .TituloCuadro {
@@ -820,7 +820,6 @@ header {
         margin: 5vh;
         width: 70vw;
         height: 55vh;
-        padding: 15% 3% 25% 3%;
     }
 
     .ListaCuadro {
@@ -1622,4 +1621,3 @@ footer {
         font-size: 1.8em;
     }
 }
-
