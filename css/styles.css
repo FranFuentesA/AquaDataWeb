@@ -386,7 +386,11 @@
     }
 }
 
-/*---------- Los demás =D ----------*/
+/*---------- Estilos Globales Seccion 2 ----------*/
+
+body{overflow-y: scroll;
+    overflow-x: hidden;}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -588,7 +592,6 @@ header {
 .Seccion1 {
     background: url(../img/secPrimBack_recortada_oscurecido.jpg) no-repeat;
     background-size: cover;
-    padding-top: 4.4%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -597,7 +600,7 @@ header {
     justify-content: center;
     display: -webkit-flex;
     -webkit-justify-content: center;
-    height: auto;
+    height: 100vh;
 
 }
 
@@ -636,7 +639,7 @@ header {
     border-style: solid;
     color: #fff;
     width: 22vw;
-    height: 55vh;
+    height: auto;
     padding: 5vh 1.5vw;
 }
 
@@ -721,9 +724,9 @@ header {
 
 @media (max-width: 768px) {
 
-    /* .Seccion1{
-         height: 225vh;
-     }*/
+    .Seccion1{
+       height: auto;
+    }
 
     .TituloSeccion1 {
         font-size: 4.9em;
@@ -765,7 +768,6 @@ header {
     #CuadroCentral {
         margin: 5vh;
         height: auto;
-        width: 50vh;
         padding: 10vh 3vh 15vh 3vh;
     }
 
@@ -830,7 +832,7 @@ header {
 /*---------- SECCIÓN 2 ----------*/
 
 .seccion2{
-    height: auto;
+    height: 100vh;
 }
 
 .TituloCuadro2 {
@@ -881,7 +883,7 @@ header {
     min-width: 30%;
     margin: 0.3%;
     padding: 0 1% 0 1%;
-    height: 10em;
+    height: 41vh;
 }
 
 .CuadroSec2 div {
@@ -953,9 +955,9 @@ header {
 
 @media (max-width: 768px) {
 
-    /* .seccion2 {
-         height: 320vh;
-     }*/
+    .seccion2 {
+       height: auto;
+    }
 
     .tituloSeccion2 {
         font-size: 2em;
@@ -990,12 +992,17 @@ header {
 /*---------- SECCIÓN 3 ----------*/
 
 
-.seccion3 {
+.Seccion3 {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
 }
 
 .tituloSeccion3 {
-    margin: 8% 0 5% 0;
+    margin-bottom: 5%;
     color: #74C6D1;
     font-size: 1.3em;
     font-weight: bold;
@@ -1027,12 +1034,9 @@ header {
 
 }
 
-#seccionClicFish{
-    margin: 16vw 0;
-}
-
-#seccionRiverView{
-    margin: 12vw 0;
+#seccionClicFish,#seccionRiverView{
+    height: 100%;
+    padding-bottom: 5vh;
 }
 
 .imagenMovil1, .imagenMovil2 {
@@ -1054,7 +1058,7 @@ header {
 }
 
 #tituloClic{
-    margin-bottom: 5vh;
+    margin: 5vh 0;
 }
 
 .imgMovil, .imgLogos {
@@ -1087,6 +1091,7 @@ header {
     height: auto;
     display: -webkit-flex;
     -webkit-align-self: flex-start;
+    justify-content: flex-end;
 }
 
 .imgLogos h1 {
@@ -1124,8 +1129,8 @@ header {
 }
 
 .conjuntoIcnos {
-    width: 3vw;
-    height: 7vh;
+    width: auto;
+    height: 2.6vw;
     margin: 0 1% 0 1%;
 }
 
@@ -1183,6 +1188,10 @@ header {
 
 @media (max-width: 768px) {
 
+    .Seccion3 {
+        height: auto;
+    }
+
     .tituloSeccion3 {
         font-size: 2.5em;
     }
@@ -1226,7 +1235,7 @@ header {
 
     .google{
         margin-right: 2vw;
-        width: 35vw;
+        width: 38vw;
         height: auto;
     }
 
