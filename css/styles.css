@@ -53,6 +53,7 @@
         font-size: 64px;
     }
 }
+
 @media (orientation: landscape) and (max-width: 3328px) {
     body {
         font-size: 59px;
