@@ -1040,7 +1040,7 @@ header {
 }
 
 #seccionClicFish,#seccionRiverView{
-    height: 100%;
+    height: auto;
     padding-bottom: 5vh;
 }
 
@@ -1249,6 +1249,10 @@ header {
         width: 40vw;
         height: auto;
     }
+    
+    #seccionClicFish,#seccionRiverView{
+    height: auto;
+    padding-bottom: 5vh;
 }
 
 
