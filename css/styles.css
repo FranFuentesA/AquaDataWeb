@@ -386,6 +386,7 @@
     }
 }
 
+
 /*---------- Estilos Globales Seccion 2 ----------*/
 
 body{overflow-y: scroll;
@@ -994,10 +995,14 @@ header {
 
 .Seccion3 {
     height: 100vh;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
     margin-bottom: 5vh;
 }
 
@@ -1091,7 +1096,8 @@ header {
     height: auto;
     display: -webkit-flex;
     -webkit-align-self: flex-start;
-    justify-content: flex-end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
 }
 
 .imgLogos h1 {
@@ -1457,8 +1463,10 @@ header {
 
 /*-------------------- FOOTER --------------------*/
 footer {
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 5% 0;
     background: rgb(14, 179, 191);
     text-align: center;
@@ -1466,9 +1474,12 @@ footer {
 }
 
 #ContactoRedesSociales {
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-basis: 35%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
 }
 
 .BotonesIconos {
@@ -1494,9 +1505,6 @@ footer {
     width: 0;
     height: 0;
     border-radius: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
 
 }
@@ -1521,19 +1529,14 @@ footer {
     background: #8a3ab9;
 
     /* FF3.6-15 */
-    background: -moz-linear-gradient(45deg, #8a3ab9 0%, #bc2a8d 50%, #bc2a8d 50%, #cd486b 100%, #e95950 100%);
 
     /* Chrome4-9,Safari4-5 */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #8a3ab9), color-stop(50%, #bc2a8d), color-stop(50%, #bc2a8d), color-stop(100%, #cd486b), color-stop(100%, #e95950));
 
     /* Chrome10-25,Safari5.1-6 */
-    background: -webkit-linear-gradient(45deg, #8a3ab9 0%, #bc2a8d 50%, #bc2a8d 50%, #cd486b 100%, #e95950 100%);
 
     /* Opera 11.10-11.50 */
-    background: -o-linear-gradient(45deg, #8a3ab9 0%, #bc2a8d 50%, #bc2a8d 50%, #cd486b 100%, #e95950 100%);
 
     /* IE10 preview */
-    background: -ms-linear-gradient(45deg, #8a3ab9 0%, #bc2a8d 50%, #bc2a8d 50%, #cd486b 100%, #e95950 100%);
 
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background: linear-gradient(45deg, #8a3ab9 0%, #bc2a8d 50%, #bc2a8d 50%, #cd486b 100%, #e95950 100%);
@@ -1560,18 +1563,20 @@ footer {
     background: none;
     color: white;
     z-index: 1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 #Avisos {
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    flex-basis: 45%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
     font-size: 1.5vw;
 }
 
@@ -1583,17 +1588,18 @@ footer {
 #Avisos div a:hover {
     text-decoration: none;
     text-shadow: 0.3vw 0.3vw 0.5vw rgba(0, 0, 0, 1);
-    -webkit-transition: text-shadow 0.3s ease-in-out;
-    -moz-transition: text-shadow 0.3s ease-in-out;
-    -o-transition: text-shadow 0.3s ease-in-out;
     transition: text-shadow 0.3s ease-in-out;
 }
 
 #Copyright {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 20%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
     font-size: 1.5vw;
 }
 
@@ -1603,7 +1609,8 @@ footer {
     }
 
     #ContactoRedesSociales, #Avisos, #Copyright {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     }
 
     .BotonesIconos {
@@ -1631,11 +1638,13 @@ footer {
     }
 
     #Avisos div {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     }
 
     #Copyright {
-        justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
         font-size: 3.5vw;
     }
 }
