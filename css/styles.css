@@ -1194,7 +1194,7 @@ header {
 @media (max-width: 768px) {
 
     .Seccion3 {
-        height: auto;
+        height: auto !important;
     }
 
     .tituloSeccion3 {
