@@ -1043,7 +1043,7 @@ header {
 }
 
 #seccionClicFish,#seccionRiverView{
-    height: auto;
+    height: 100%;
     padding-bottom: 5vh;
 }
 
@@ -1188,10 +1188,6 @@ header {
     -webkit-justify-content: center;
     -webkit-align-items: center;
     -webkit-align-content: center;
-}
-
-@media (max-width: 1594px) {
-
 }
 
 
