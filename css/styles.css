@@ -693,10 +693,8 @@ header {
     -webkit-justify-content: center;
     -webkit-align-items: flex-end;
     -webkit-align-content: center;
-    height: 6em;
-    padding: 2%;
-
-
+    height: 30vh;
+    padding: 3vh;
 
 }
 
