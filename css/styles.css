@@ -926,7 +926,7 @@ header {
     -webkit-align-items: center;
     -webkit-align-content: center;
     height: 5px;
-    width: 99vw;
+    width: 100vw;
 
 }
 
@@ -1175,7 +1175,7 @@ header {
     align-items: center;
     -ms-flex-line-pack: center;
     align-content: center;
-    margin-bottom: 0.8%;
+    margin-bottom: 5vh;
     display: -webkit-flex;
     -webkit-justify-content: center;
     -webkit-align-items: center;
