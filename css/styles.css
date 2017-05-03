@@ -619,6 +619,7 @@ header {
     width: 19.5%;
 }
 
+
 .ContenedorCuadros {
     display: -ms-flexbox;
     display: flex;
@@ -756,6 +757,7 @@ header {
         display: -webkit-flex;
         -webkit-justify-content: center;
         -webkit-align-items: center;
+        height: auto;
     }
 
     .Cuadro {
