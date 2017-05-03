@@ -1175,7 +1175,7 @@ header {
     align-items: center;
     -ms-flex-line-pack: center;
     align-content: center;
-    margin-bottom: 2%;
+    margin-bottom: 0.8%;
     display: -webkit-flex;
     -webkit-justify-content: center;
     -webkit-align-items: center;
