@@ -550,17 +550,18 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: flex-end;
     -ms-flex-line-pack: center;
     align-content: center;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     display: -webkit-flex;
     -webkit-justify-content: center;
-    -webkit-align-items: center;
+    -webkit-align-items: flex-end;
     -webkit-align-content: center;
     -webkit-flex-basis: 50%;
     width: 50%;
+    padding-botoom:2%;
 }
 
 .Descender img {
@@ -685,14 +686,18 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: flex-end;
     -ms-flex-line-pack: center;
     align-content: center;
     display: -webkit-flex;
     -webkit-justify-content: center;
-    -webkit-align-items: center;
+    -webkit-align-items: flex-end;
     -webkit-align-content: center;
-    height: 5em;
+    height: 6em;
+    padding: 2%;
+
+
+
 }
 
 .BotonDescender a {
@@ -729,7 +734,7 @@ header {
 @media (max-width: 768px) {
 
     .Seccion1{
-       height: auto;
+        height: auto;
     }
 
     .TituloSeccion1 {
@@ -920,7 +925,8 @@ header {
     -webkit-align-items: center;
     -webkit-align-content: center;
     height: 5px;
-    width: 100vw;
+    width: 99vw;
+
 }
 
 .tituloSeccion2 {
@@ -960,7 +966,7 @@ header {
 @media (max-width: 768px) {
 
     .seccion2 {
-       height: auto;
+        height: auto;
     }
 
     .tituloSeccion2 {
@@ -1001,11 +1007,11 @@ header {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     -ms-flex-pack: justify;
-        justify-content: space-between;
+    justify-content: space-between;
     -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     margin-bottom: 5vh;
 }
 
@@ -1100,7 +1106,7 @@ header {
     display: -webkit-flex;
     -webkit-align-self: flex-start;
     -ms-flex-pack: end;
-        justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 .imgLogos h1 {
@@ -1168,7 +1174,7 @@ header {
     align-items: center;
     -ms-flex-line-pack: center;
     align-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     display: -webkit-flex;
     -webkit-justify-content: center;
     -webkit-align-items: center;
@@ -1249,11 +1255,11 @@ header {
         width: 40vw;
         height: auto;
     }
-    
+
     #seccionClicFish,#seccionRiverView{
-    height: auto;
-    padding-bottom: 5vh;
-}
+        height: auto;
+        padding-bottom: 5vh;
+    }
 }
 
 /*---------- SECCIÓN 4 ----------*/
@@ -1470,7 +1476,7 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 5% 0;
     background: rgb(14, 179, 191);
     text-align: center;
@@ -1481,9 +1487,9 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
     -ms-flex-preferred-size: 35%;
-        flex-basis: 35%;
+    flex-basis: 35%;
 }
 
 .BotonesIconos {
@@ -1574,13 +1580,13 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
+    flex-basis: 45%;
     font-size: 1.5vw;
 }
 
@@ -1599,11 +1605,11 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     -ms-flex-pack: center;
-        justify-content: center;
+    justify-content: center;
     -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
+    flex-basis: 20%;
     font-size: 1.5vw;
 }
 
@@ -1614,7 +1620,7 @@ footer {
 
     #ContactoRedesSociales, #Avisos, #Copyright {
         -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+        flex-basis: 100%;
     }
 
     .BotonesIconos {
@@ -1643,12 +1649,12 @@ footer {
 
     #Avisos div {
         -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
+        flex-basis: 100%;
     }
 
     #Copyright {
         -ms-flex-pack: end;
-            justify-content: flex-end;
+        justify-content: flex-end;
         font-size: 3.5vw;
     }
 }
