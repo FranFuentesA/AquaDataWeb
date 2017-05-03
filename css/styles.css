@@ -616,7 +616,7 @@ header {
 }
 
 .Iconos {
-    width: 22.5%;
+    width: 19.5%;
 }
 
 .ContenedorCuadros {
@@ -628,6 +628,7 @@ header {
     justify-content: center;
     display: -webkit-flex;
     -webkit-justify-content: center;
+    height: 60vh;
 }
 
 .Cuadro {
